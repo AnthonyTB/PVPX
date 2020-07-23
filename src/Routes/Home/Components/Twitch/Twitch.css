@@ -1,0 +1,68 @@
+.Twitch {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.blink-live {
+  animation: blinker 1.5s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
+  color: lime;
+}
+
+.blink-rebroadcast {
+  animation: blinker 1.5s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
+  color: red;
+}
+
+@keyframes blinker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.Twitch-Container {
+  height: 185px;
+  width: 330px;
+  margin: auto auto;
+  box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  margin-top: 0;
+}
+
+.Twitch-Container iframe {
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+}
+
+.Twitch .Heading {
+  background: url(../../../../Assets/yellow.svg);
+  background-size: 40px 40px;
+  height: 40px;
+  margin-bottom: 40px;
+  align-self: baseline;
+  height: 30px;
+}
+
+.Twitch .Heading .regular {
+  width: 52%;
+}
+
+.Twitch .Heading .extended {
+  width: 100%;
+}
+
+.Twitch .Heading h3 {
+  font-size: 30px;
+  position: relative;
+  top: -26px;
+  left: 20px;
+  color: #fff;
+}

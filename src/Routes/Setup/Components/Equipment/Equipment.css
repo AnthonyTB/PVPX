@@ -1,0 +1,104 @@
+.Setup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Setup .hidden {
+  display: none;
+}
+
+.Setup h5 {
+  display: inline-block;
+}
+
+.Setup select {
+  display: inline-block;
+  background: transparent;
+  color: #fff;
+  border: 0;
+}
+
+.Setup ul {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  list-style: none;
+  padding: 0;
+  width: 90%;
+  height: 500px;
+  overflow-y: scroll;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.Setup ul li {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  padding: 5px;
+  margin-bottom: 15px;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.Setup .toggle-btns button {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.Setup ul li h6 {
+  float: left;
+  color: #d79d00;
+  margin: 0 0 0 3px;
+  font-size: 15px;
+}
+
+.Setup ul li p {
+  clear: both;
+  float: left;
+  font-size: 15px;
+  margin: 5px 0 0 3px;
+  width: 70%;
+  text-align: left;
+}
+
+.Setup ul li a {
+  float: right;
+  margin-top: -10px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  transition: 1s all ease;
+  text-decoration: none;
+  padding: 4px 20px;
+  background: #d79d00;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+}
+
+.Setup ul li a:hover {
+}

@@ -1,0 +1,67 @@
+.AboutMe {
+  margin-bottom: 100px;
+}
+
+.AboutMe .video-container {
+  width: 330px;
+  margin: auto;
+  border-radius: 25px;
+  position: relative;
+}
+
+.AboutMe .video-container video {
+  border-radius: 25px;
+  box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.5);
+}
+
+.AboutMe p {
+  text-align: left;
+  margin: auto;
+  margin-top: 20px;
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+.AboutMe .Heading {
+  position: relative;
+  background: url(../../../../Assets/yellow.svg) center;
+  background-size: 40px 40px;
+  width: 42%;
+  height: 30px;
+  margin-bottom: 40px;
+}
+
+.AboutMe .Heading h3 {
+  font-size: 30px;
+  position: relative;
+  top: 8px;
+  left: 20px;
+  color: #fff;
+}
+
+.AboutMe .Socials ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.AboutMe .Socials ul li {
+  display: inline-block;
+  margin-right: 30px;
+  position: relative;
+}
+
+.AboutMe .Socials ul li a {
+  text-decoration: none;
+}
+
+.AboutMe .Socials ul li a i {
+  font-size: 50px;
+}
+
+.AboutMe .Socials ul li a span {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: -30px;
+}

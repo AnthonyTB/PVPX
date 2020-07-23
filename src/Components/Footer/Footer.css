@@ -1,0 +1,49 @@
+.Footer {
+  position: relative;
+}
+
+.left-column {
+  width: 40%;
+  float: left;
+}
+
+.middle-column {
+  transform: rotate(90deg);
+  width: 20%;
+  position: absolute;
+  bottom: -77px;
+  left: 0;
+  right: 0;
+}
+
+.right-column {
+  width: 50%;
+  float: right;
+}
+
+.Footer .small-branding {
+  height: auto;
+  width: 100px;
+  position: absolute;
+  top: 45px;
+  left: 40px;
+  right: 0;
+}
+
+.Footer ul {
+  list-style: none;
+  float: left;
+  position: absolute;
+  top: 38px;
+  left: 160px;
+  right: 0;
+}
+
+.Footer ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.Footer ul li i {
+  color: #d79d00;
+}
