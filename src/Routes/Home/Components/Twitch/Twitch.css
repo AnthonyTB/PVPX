@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;100&display=swap');
+
 .Twitch {
   min-height: 30vh;
   display: flex;
@@ -6,25 +8,6 @@
   justify-content: center;
   position: relative;
   margin-bottom: 100px;
-}
-
-.blink-live {
-  animation: blinker 1.5s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
-  color: lime;
-}
-
-.blink-rebroadcast {
-  animation: blinker 1.5s cubic-bezier(0.5, 0, 1, 1) infinite alternate;
-  color: red;
-}
-
-@keyframes blinker {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
 }
 
 .Twitch-Container {
@@ -49,17 +32,11 @@
   margin-bottom: 40px;
   align-self: baseline;
   height: 30px;
-}
-
-.Twitch .Heading .regular {
-  width: 52%;
-}
-
-.Twitch .Heading .extended {
-  width: 100%;
+  width: 55%;
 }
 
 .Twitch .Heading h3 {
+  font-family: 'Ubuntu', sans-serif;
   font-size: 30px;
   position: relative;
   top: -26px;

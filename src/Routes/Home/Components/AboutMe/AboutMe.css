@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;100&display=swap');
+
 .AboutMe {
   margin-bottom: 100px;
 }
@@ -32,6 +34,7 @@
 }
 
 .AboutMe .Heading h3 {
+  font-family: 'Ubuntu', sans-serif;
   font-size: 30px;
   position: relative;
   top: 8px;
@@ -47,7 +50,6 @@
 
 .AboutMe .Socials ul li {
   display: inline-block;
-  margin-right: 30px;
   position: relative;
 }
 
@@ -63,5 +65,28 @@
   color: #fff;
   position: absolute;
   bottom: 0;
-  right: -30px;
+  right: -20px;
+}
+
+.AboutMe .Socials ul li:nth-child(1) a i {
+  background: -webkit-linear-gradient(#2a0845, #6441a5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.AboutMe .Socials ul li:nth-child(2) a i {
+  background: -webkit-linear-gradient(#b31217, #e52d27);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.AboutMe .Socials ul li:nth-child(3) a i {
+  background: -webkit-linear-gradient(#0072ff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.AboutMe .Socials ul li:nth-child(1),
+.AboutMe .Socials ul li:nth-child(2) {
+  margin-right: 60px;
 }

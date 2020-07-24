@@ -3,7 +3,7 @@
 }
 
 .left-column {
-  width: 40%;
+  width: 30%;
   float: left;
 }
 
@@ -12,7 +12,7 @@
   width: 20%;
   position: absolute;
   bottom: -77px;
-  left: 0;
+  left: -70px;
   right: 0;
 }
 
@@ -26,7 +26,7 @@
   width: 100px;
   position: absolute;
   top: 45px;
-  left: 40px;
+  left: 20px;
   right: 0;
 }
 
@@ -35,7 +35,7 @@
   float: left;
   position: absolute;
   top: 38px;
-  left: 160px;
+  left: 135px;
   right: 0;
 }
 

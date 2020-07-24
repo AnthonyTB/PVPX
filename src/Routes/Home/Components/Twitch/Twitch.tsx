@@ -4,7 +4,7 @@ import { Context } from '../../../../Context';
 
 const Twitch: React.FC<any> = () => {
   const { twitchStream, twitchVod } = useContext(Context);
-  const liveStatus = twitchStream.data.length > 0 ? false : true;
+  const liveStatus = twitchStream.data.length > 0 ? true : false;
 
   const renderLiveStream = () => {
     return (

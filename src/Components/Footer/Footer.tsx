@@ -36,6 +36,11 @@ const Footer: React.FC<any> = () => {
               <i className='fab fa-discord'></i>
             </a>
           </li>
+          <li>
+            <a href='' target='blank_'>
+              <i className='fas fa-envelope'></i>
+            </a>
+          </li>
         </ul>
       </div>
     </footer>
