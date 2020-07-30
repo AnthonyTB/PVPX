@@ -1,49 +1,48 @@
 .Footer {
+  bottom: 0;
+}
+
+.Footer-Container {
   position: relative;
 }
 
-.left-column {
-  width: 30%;
-  float: left;
+.Footer-Container .left-column {
+  width: 33%;
+  display: inline-block;
 }
 
-.middle-column {
-  transform: rotate(90deg);
-  width: 20%;
-  position: absolute;
-  bottom: -77px;
-  left: -70px;
-  right: 0;
+.Footer-Container .middle-column {
+  width: 15%;
+  display: inline-block;
 }
 
-.right-column {
-  width: 50%;
-  float: right;
+.Footer-Container .right-column {
+  width: 52%;
+  display: inline-block;
 }
 
-.Footer .small-branding {
+.Footer-Container .small-branding {
   height: auto;
   width: 100px;
-  position: absolute;
-  top: 45px;
-  left: 20px;
-  right: 0;
+  margin-right: -20px;
+  margin-bottom: -12px;
 }
 
-.Footer ul {
+.Footer-Container .middle-column hr {
+  width: 50px;
+  transform: rotate(90deg);
+}
+
+.Footer-Container ul {
   list-style: none;
-  float: left;
-  position: absolute;
-  top: 38px;
-  left: 135px;
-  right: 0;
+  margin-left: -50px;
 }
 
-.Footer ul li {
+.Footer-Container ul li {
   display: inline-block;
   margin-right: 15px;
 }
 
-.Footer ul li i {
+.Footer-Container ul li i {
   color: #d79d00;
 }

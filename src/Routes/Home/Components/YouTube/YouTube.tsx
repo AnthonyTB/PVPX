@@ -1,5 +1,6 @@
 import React from 'react';
 import './YouTube.css';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const YouTube: React.FC<any> = () => {
   const renderYoutubeUploads = () => {
@@ -22,7 +23,11 @@ const YouTube: React.FC<any> = () => {
     );
   };
 
-  return <section className='YouTube'>{renderYoutubeUploads()}</section>;
+  return (
+    <ScrollAnimation animateIn='fadeIn' duration={2.5} delay={2}>
+      <section className='YouTube'>{renderYoutubeUploads()}</section>
+    </ScrollAnimation>
+  );
 };
 
 export default YouTube;

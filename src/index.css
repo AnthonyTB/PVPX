@@ -7,6 +7,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #1d1f25;
   color: #fff;
+  overflow-x: hidden;
+  position: relative;
+}
+
+*:focus {
+  outline: none;
 }
 
 code {

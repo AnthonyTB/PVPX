@@ -4,8 +4,9 @@ import { Equipment } from './Components/';
 const Setup: React.FC<any> = () => {
   return (
     <>
-      <h1>Setup</h1>
-      <Equipment />
+      <section className='Setup'>
+        <Equipment />
+      </section>
     </>
   );
 };

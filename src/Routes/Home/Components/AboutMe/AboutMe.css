@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;400&display=swap');
 
 .AboutMe {
   margin-bottom: 100px;
@@ -63,6 +63,9 @@
 
 .AboutMe .Socials ul li a span {
   color: #fff;
+  font-family: titling-gothic-fb, sans-serif;
+  font-weight: 200;
+  font-style: normal;
   position: absolute;
   bottom: 0;
   right: -20px;

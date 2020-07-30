@@ -1,23 +1,38 @@
 .Setup {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  min-height: 100vh;
+}
+
+.Equipment {
+  width: 90%;
+  margin: auto;
+  overflow-x: hidden;
 }
 
 .Setup .hidden {
   display: none;
 }
 
-.Setup h5 {
-  display: inline-block;
+.Setup .fa-circle {
+  color: #8e8f92;
 }
 
-.Setup select {
-  display: inline-block;
-  background: transparent;
-  color: #fff;
+.Setup .toggle-btns button {
+  margin-top: 100px;
+  background: 0;
+  padding: 0;
   border: 0;
+  font-size: 20px;
+  color: #d79d00;
+}
+
+.Setup .Heading {
+}
+
+.Setup .Heading h3 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  color: #fff;
+  text-align: left;
 }
 
 .Setup ul {
@@ -41,9 +56,6 @@
   align-items: flex-start;
   list-style: none;
   padding: 0;
-  width: 90%;
-  height: 500px;
-  overflow-y: scroll;
   margin: auto;
   margin-bottom: 30px;
 }
@@ -74,6 +86,7 @@
   color: #d79d00;
   margin: 0 0 0 3px;
   font-size: 15px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .Setup ul li p {
@@ -86,19 +99,10 @@
 }
 
 .Setup ul li a {
+  font-size: 14px;
   float: right;
   margin-top: -10px;
   color: #fff;
-  position: relative;
-  overflow: hidden;
   transition: 1s all ease;
   text-decoration: none;
-  padding: 4px 20px;
-  background: #d79d00;
-  border-radius: 15px;
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
-  text-transform: uppercase;
-}
-
-.Setup ul li a:hover {
 }

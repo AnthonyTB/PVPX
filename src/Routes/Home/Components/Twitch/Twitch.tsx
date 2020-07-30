@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import './Twitch.css';
 import { Context } from '../../../../Context';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Twitch: React.FC<any> = () => {
   const { twitchStream, twitchVod } = useContext(Context);
@@ -49,9 +50,11 @@ const Twitch: React.FC<any> = () => {
   };
 
   return (
-    <section className='Twitch'>
-      {liveStatus ? renderLiveStream() : renderPastBroadcast()}
-    </section>
+    <ScrollAnimation animateIn='fadeIn' duration={2.5} delay={2}>
+      <section className='Twitch'>
+        {liveStatus ? renderLiveStream() : renderPastBroadcast()}
+      </section>
+    </ScrollAnimation>
   );
 };
 
