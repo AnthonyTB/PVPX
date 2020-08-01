@@ -35,6 +35,7 @@ const Twitch: React.FC<any> = () => {
           <h3>Latest Stream</h3>
         </div>
         <div className='Twitch-Container'>
+          <i className='fab fa-twitch'></i>
           <iframe
             title="PVPX's Live Stream"
             src={`https://player.twitch.tv/?video=v${twitchVod.data[0].id}&parent=localhost&parent=pvpx.vercel.sh&parent=pvpx.live&muted=true&autoplay=true`}

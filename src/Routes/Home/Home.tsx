@@ -1,13 +1,16 @@
 import React from 'react';
 import { AboutMe, Hero, Twitch, YouTube } from './Components/';
+import './Home.css';
 
 const Home: React.FC<any> = () => {
   return (
     <>
       <Hero />
       <AboutMe />
-      <Twitch />
-      <YouTube />
+      <div className='desktop'>
+        <Twitch />
+        <YouTube />
+      </div>
     </>
   );
 };

@@ -1,48 +1,181 @@
 .Footer {
   bottom: 0;
+  margin-bottom: 30px;
 }
 
 .Footer-Container {
-  position: relative;
+  width: 85%;
+  margin: auto;
 }
 
 .Footer-Container .left-column {
-  width: 33%;
   display: inline-block;
+  float: left;
 }
 
 .Footer-Container .middle-column {
-  width: 15%;
   display: inline-block;
+  margin: auto;
+  transform: rotate(90deg);
 }
 
 .Footer-Container .right-column {
-  width: 52%;
   display: inline-block;
+  float: right;
 }
 
 .Footer-Container .small-branding {
   height: auto;
   width: 100px;
-  margin-right: -20px;
-  margin-bottom: -12px;
+  margin-bottom: -16px;
 }
 
 .Footer-Container .middle-column hr {
   width: 50px;
-  transform: rotate(90deg);
+  padding: 0;
+  margin: 0;
 }
 
 .Footer-Container ul {
   list-style: none;
-  margin-left: -50px;
+  width: 100%;
+  padding: 0;
+  margin-top: 0px;
 }
 
 .Footer-Container ul li {
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 13px;
+}
+
+.Footer-Container ul li:nth-child(6) {
+  margin-right: 0px;
 }
 
 .Footer-Container ul li i {
   color: #d79d00;
+}
+
+@media only screen and (min-device-width: 320px) {
+  .Footer-Container .small-branding {
+    width: 70px;
+  }
+
+  .Footer-Container {
+    width: 90%;
+  }
+
+  .Footer-Container ul {
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .Footer-Container .small-branding {
+    width: 200px;
+    margin-right: -20px;
+    margin-bottom: -32px;
+    margin-top: -10px;
+  }
+
+  .Footer-Container .middle-column hr {
+    width: 100px;
+  }
+
+  .Footer-Container {
+    min-width: 600px;
+    width: 50%;
+  }
+
+  .Footer-Container ul {
+    margin-top: 10px;
+  }
+
+  .Footer-Container ul li {
+    margin-right: 25px;
+  }
+
+  .Footer {
+    margin-bottom: 60px;
+  }
+
+  .Footer-Container ul li i {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .Footer-Container .small-branding {
+    width: 300px;
+    margin-top: -40px;
+  }
+
+  .Footer-Container .middle-column hr {
+    width: 150px;
+  }
+
+  .Footer-Container ul {
+    margin-top: 0px;
+  }
+
+  .Footer-Container ul li {
+    margin-right: 35px;
+  }
+
+  .Footer {
+    margin-bottom: 100px;
+  }
+
+  .Footer-Container {
+    min-width: 500px;
+    width: 82%;
+  }
+
+  .Footer-Container ul li i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-device-width: 1025px) {
+  .Footer-Container .small-branding {
+    width: 200px;
+    margin-bottom: 0;
+    margin-top: -20px;
+  }
+
+  .Footer-Container .middle-column hr {
+    width: 85px;
+  }
+
+  .Footer-Container ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 0px;
+  }
+
+  .Footer-Container ul li {
+    margin-right: 20px;
+  }
+
+  .Footer-Container ul li i {
+    font-size: 20px;
+    transition: all 0.5s ease-out;
+  }
+
+  .Footer-Container ul li i:hover {
+    color: #fff;
+    transition: all 0.5s ease-out;
+  }
+
+  .Footer-Container {
+    margin-bottom: 50px;
+    width: 30%;
+    overflow-x: visible;
+    min-width: 530px;
+  }
+
+  .Footer {
+    margin-bottom: 60px;
+    margin-top: 150px;
+  }
 }

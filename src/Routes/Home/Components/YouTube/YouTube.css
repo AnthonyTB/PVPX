@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .Youtube-Container {
@@ -41,4 +41,210 @@
   top: -26px;
   left: 20px;
   color: #fff;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .YouTube .Heading {
+    background-size: 60px 60px;
+    height: 40px;
+    width: 37%;
+  }
+
+  .YouTube .Heading h3 {
+    font-size: 40px;
+    top: -31px;
+    left: 30px;
+  }
+
+  .Youtube-Container {
+    height: 355px;
+    width: 630px;
+  }
+
+  .YouTube {
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .YouTube .Heading {
+    background-size: 80px 80px;
+    height: 59px;
+    width: 40.5%;
+  }
+
+  .YouTube .Heading h3 {
+    font-size: 60px;
+    top: -49px;
+    left: 45px;
+  }
+
+  .Youtube-Container {
+    height: 465px;
+    width: 830px;
+  }
+
+  .YouTube {
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (min-device-width: 1025px) {
+  .YouTube .Heading {
+    background-size: 60px 60px;
+    height: 39px;
+    width: 285px;
+    margin-bottom: 60px;
+    float: right;
+  }
+
+  .YouTube .Heading h3 {
+    font-size: 40px;
+    top: -29px;
+    left: -50px;
+    text-align: right;
+  }
+
+  .YouTube {
+    margin-bottom: 0;
+    float: right;
+  }
+
+  .Youtube-Container {
+    clear: both;
+    height: 208px;
+    width: 370px;
+    margin-right: 60px;
+    position: relative;
+  }
+
+  .Youtube-Container iframe {
+    z-index: 10;
+    position: relative;
+  }
+
+  .Youtube-Container i {
+    position: absolute;
+    color: #27292f;
+    top: -80px;
+    left: -30px;
+    font-size: 120px;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-device-width: 1200px) {
+  .YouTube .Heading {
+    background-size: 60px 60px;
+    height: 39px;
+    width: 285px;
+    margin-bottom: 60px;
+    float: right;
+  }
+
+  .YouTube .Heading h3 {
+    font-size: 40px;
+    top: -29px;
+    left: -50px;
+    text-align: right;
+  }
+
+  .YouTube {
+    margin-bottom: 0;
+    float: right;
+  }
+
+  .Youtube-Container {
+    clear: both;
+    height: 250px;
+    width: 444px;
+    margin-right: 80px;
+    position: relative;
+  }
+
+  .Youtube-Container iframe {
+    z-index: 10;
+    position: relative;
+  }
+
+  .Youtube-Container i {
+    position: absolute;
+    color: #27292f;
+    top: -80px;
+    left: -30px;
+    font-size: 120px;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-device-width: 1500px) {
+  .YouTube .Heading {
+    background-size: 80px 80px;
+    height: 59px;
+    width: 405px;
+    margin-bottom: 60px;
+    float: right;
+  }
+
+  .YouTube .Heading h3 {
+    font-size: 60px;
+    top: -49px;
+    left: -40px;
+  }
+
+  .Youtube-Container {
+    height: 310px;
+    width: 551px;
+    margin-right: 150px;
+  }
+
+  .Youtube-Container i {
+    top: -80px;
+    left: -30px;
+    font-size: 120px;
+  }
+}
+
+@media screen and (min-device-width: 1800px) {
+  .YouTube .Heading {
+    background-size: 80px 80px;
+    height: 59px;
+    width: 405px;
+    margin-bottom: 80px;
+    float: right;
+  }
+
+  .YouTube .Heading h3 {
+    font-size: 60px;
+    top: -49px;
+    left: -40px;
+    text-align: right;
+  }
+
+  .YouTube {
+    margin-bottom: 0;
+    float: right;
+  }
+
+  .Youtube-Container {
+    clear: both;
+    height: 410px;
+    width: 730px;
+    margin-right: 50px;
+    position: relative;
+  }
+
+  .Youtube-Container iframe {
+    z-index: 10;
+    position: relative;
+  }
+
+  .Youtube-Container i {
+    position: absolute;
+    color: #27292f;
+    top: -130px;
+    left: -60px;
+    font-size: 220px;
+    z-index: 1;
+  }
 }

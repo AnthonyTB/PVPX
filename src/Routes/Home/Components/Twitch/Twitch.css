@@ -28,7 +28,6 @@
 .Twitch .Heading {
   background: url(../../../../Assets/yellow.svg);
   background-size: 40px 40px;
-  height: 40px;
   margin-bottom: 40px;
   align-self: baseline;
   height: 30px;
@@ -42,4 +41,210 @@
   top: -26px;
   left: 20px;
   color: #fff;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .Twitch .Heading {
+    background-size: 60px 60px;
+    height: 40px;
+    width: 37%;
+  }
+
+  .Twitch .Heading h3 {
+    font-size: 40px;
+    top: -31px;
+    left: 40px;
+  }
+
+  .Twitch-Container {
+    height: 355px;
+    width: 630px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .Twitch .Heading {
+    background-size: 80px 80px;
+    height: 59px;
+    width: 40.5%;
+  }
+
+  .Twitch .Heading h3 {
+    font-size: 60px;
+    top: -49px;
+    left: 60px;
+  }
+
+  .Twitch-Container {
+    height: 465px;
+    width: 830px;
+  }
+
+  .Twitch {
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (min-device-width: 1025px) {
+  .Twitch {
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .Twitch .Heading {
+    background-size: 60px 60px;
+    height: 39px;
+    width: 285px;
+    margin-bottom: 60px;
+  }
+
+  .Twitch .Heading h3 {
+    font-size: 40px;
+    top: 9px;
+    left: 40px;
+  }
+
+  .Twitch-Container {
+    height: 208px;
+    width: 370px;
+    margin-left: 60px;
+    position: relative;
+  }
+
+  .Twitch-Container iframe {
+    position: relative;
+    z-index: 10;
+  }
+
+  .Twitch-Container i {
+    position: absolute;
+    color: #27292f;
+    top: -70px;
+    right: -30px;
+    font-size: 120px;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-device-width: 1200px) {
+  .Twitch {
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .Twitch .Heading {
+    background-size: 60px 60px;
+    height: 39px;
+    width: 285px;
+    margin-bottom: 60px;
+  }
+
+  .Twitch .Heading h3 {
+    font-size: 40px;
+    top: 9px;
+    left: 40px;
+  }
+
+  .Twitch-Container {
+    height: 250px;
+    width: 444px;
+    margin-left: 80px;
+    position: relative;
+  }
+
+  .Twitch-Container iframe {
+    position: relative;
+    z-index: 10;
+  }
+
+  .Twitch-Container i {
+    position: absolute;
+    color: #27292f;
+    top: -70px;
+    right: -30px;
+    font-size: 120px;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-device-width: 1500px) {
+  .Twitch {
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .Twitch .Heading {
+    background-size: 80px 80px;
+    height: 59px;
+    width: 400px;
+    margin-bottom: 60px;
+  }
+
+  .Twitch .Heading h3 {
+    font-size: 60px;
+    top: 9px;
+    left: 50px;
+  }
+
+  .Twitch-Container {
+    height: 310px;
+    width: 551px;
+    margin-left: 150px;
+    position: relative;
+  }
+
+  .Twitch-Container iframe {
+    position: relative;
+    z-index: 10;
+  }
+
+  .Twitch-Container i {
+    position: absolute;
+    color: #27292f;
+    top: -70px;
+    right: -30px;
+    font-size: 120px;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-device-width: 1800px) {
+  .Twitch {
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .Twitch .Heading {
+    background-size: 80px 80px;
+    height: 59px;
+    width: 400px;
+    margin-bottom: 80px;
+  }
+
+  .Twitch .Heading h3 {
+    font-size: 60px;
+    top: 9px;
+    left: 50px;
+  }
+
+  .Twitch-Container {
+    height: 410px;
+    width: 730px;
+    margin-left: 50px;
+    position: relative;
+  }
+
+  .Twitch-Container iframe {
+    position: relative;
+    z-index: 10;
+  }
+
+  .Twitch-Container i {
+    position: absolute;
+    color: #27292f;
+    top: -130px;
+    right: -60px;
+    font-size: 220px;
+    z-index: 1;
+  }
 }

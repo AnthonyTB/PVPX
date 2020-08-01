@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;100&display=swap');
 
 .Hero {
-  min-height: 40vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,30 +11,70 @@
 
 .Hero .container {
   border-radius: 25px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 0;
 }
 
 .Hero .particles {
-  position: absolute;
-  top: 140px;
-  left: 30px;
+  height: auto;
+  width: 250px;
 }
 
 .Hero .Branding {
-  position: absolute;
-  top: 140px;
-  left: 30px;
   height: auto;
-  width: 300px;
+  width: 250px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
-.Hero h2 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  font-size: 15px;
-  margin-bottom: 50px;
-  text-transform: uppercase;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 100;
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) {
+  .Hero .particles {
+    height: auto;
+    width: 250px;
+  }
+
+  .Hero .Branding {
+    height: auto;
+    width: 250px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .Hero .particles {
+    width: 400px;
+  }
+
+  .Hero .Branding {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .Hero .particles {
+    height: auto;
+    width: 600px;
+  }
+
+  .Hero .Branding {
+    height: auto;
+    width: 600px;
+  }
+}
+
+@media screen and (min-device-width: 1025px) {
+  .Hero .container {
+    margin-top: 100px;
+  }
+
+  .Hero .particles {
+    height: auto;
+    width: 400px;
+  }
+
+  .Hero .Branding {
+    height: auto;
+    width: 400px;
+  }
 }

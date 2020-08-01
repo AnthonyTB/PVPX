@@ -10,6 +10,7 @@ const YouTube: React.FC<any> = () => {
           <h3>Latest Upload</h3>
         </div>
         <div className='Youtube-Container'>
+          <i className='fab fa-youtube'></i>
           <iframe
             title="PVPX's Youtube Uploads"
             width='100%'
