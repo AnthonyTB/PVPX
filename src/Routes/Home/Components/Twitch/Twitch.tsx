@@ -5,7 +5,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 const Twitch: React.FC<any> = () => {
   const { twitchStream, twitchVod } = useContext(Context);
-  const liveStatus = twitchStream.data.length > 0 ? true : false;
+  const liveStatus = twitchStream.data.length > 0 ? false : true;
 
   const renderLiveStream = () => {
     return (
@@ -14,6 +14,7 @@ const Twitch: React.FC<any> = () => {
           <h3>Currently Live</h3>
         </div>
         <div className='Twitch-Container'>
+          <i className='fab fa-twitch'></i>
           <iframe
             title="PVPX's Live Stream"
             src={`https://player.twitch.tv/?channel=pvpx&parent=pvpx.vercel.sh&parent=pvpx.live&muted=true&autoplay=true`}

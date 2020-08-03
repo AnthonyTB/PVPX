@@ -18,11 +18,23 @@
   border-radius: 15px;
   -webkit-border-radius: 15px;
   margin-top: 0;
+  position: relative;
+}
+
+.Twitch-Container i {
+  position: absolute;
+  color: #27292f;
+  top: -80px;
+  right: 10px;
+  font-size: 120px;
+  z-index: 1;
 }
 
 .Twitch-Container iframe {
   border-radius: 15px;
   -webkit-border-radius: 15px;
+  position: relative;
+  z-index: 10;
 }
 
 .Twitch .Heading {
@@ -66,13 +78,13 @@
   .Twitch .Heading {
     background-size: 80px 80px;
     height: 59px;
-    width: 40.5%;
+    width: 420px;
   }
 
   .Twitch .Heading h3 {
     font-size: 60px;
     top: -49px;
-    left: 60px;
+    left: 55px;
   }
 
   .Twitch-Container {
@@ -87,7 +99,6 @@
 
 @media screen and (min-device-width: 1025px) {
   .Twitch {
-    float: left;
     margin-bottom: 0;
   }
 
@@ -107,7 +118,6 @@
   .Twitch-Container {
     height: 208px;
     width: 370px;
-    margin-left: 60px;
     position: relative;
   }
 
@@ -128,7 +138,6 @@
 
 @media screen and (min-device-width: 1200px) {
   .Twitch {
-    float: left;
     margin-bottom: 0;
   }
 
@@ -148,7 +157,6 @@
   .Twitch-Container {
     height: 250px;
     width: 444px;
-    margin-left: 80px;
     position: relative;
   }
 
@@ -169,8 +177,7 @@
 
 @media screen and (min-device-width: 1500px) {
   .Twitch {
-    float: left;
-    margin-bottom: 0;
+    margin-bottom: 100px;
   }
 
   .Twitch .Heading {
@@ -189,7 +196,6 @@
   .Twitch-Container {
     height: 310px;
     width: 551px;
-    margin-left: 150px;
     position: relative;
   }
 
@@ -210,27 +216,25 @@
 
 @media screen and (min-device-width: 1800px) {
   .Twitch {
-    float: left;
-    margin-bottom: 0;
+    margin-bottom: 100px;
   }
 
   .Twitch .Heading {
     background-size: 80px 80px;
     height: 59px;
-    width: 400px;
+    width: 415px;
     margin-bottom: 80px;
   }
 
   .Twitch .Heading h3 {
     font-size: 60px;
-    top: 9px;
-    left: 50px;
+    top: -49px;
+    left: 40px;
   }
 
   .Twitch-Container {
     height: 410px;
     width: 730px;
-    margin-left: 50px;
     position: relative;
   }
 
@@ -242,7 +246,7 @@
   .Twitch-Container i {
     position: absolute;
     color: #27292f;
-    top: -130px;
+    top: -140px;
     right: -60px;
     font-size: 220px;
     z-index: 1;
