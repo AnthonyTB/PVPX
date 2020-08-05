@@ -12,8 +12,20 @@
   display: none;
 }
 
-.Setup .fa-circle {
-  color: #8e8f92;
+.Setup .Equipment .toggle-btns .not-selected {
+  opacity: 0.4;
+  color: #fff;
+  transition: 1s all ease;
+}
+
+.Setup .Equipment .toggle-btns .not-selected:hover {
+  opacity: 1;
+  color: #d79d00;
+  transition: 1s all ease;
+}
+
+.Setup .Equipment .toggle-btns .selected {
+  transition: 1s all ease;
 }
 
 .Setup .toggle-btns button {
@@ -23,6 +35,14 @@
   border: 0;
   font-size: 20px;
   color: #d79d00;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.Setup .toggle-btns button:nth-child(4) {
+  margin-right: 0px;
 }
 
 .Setup .Heading h3 {
@@ -71,17 +91,6 @@
   padding: 5px;
   margin-bottom: 15px;
   width: 100%;
-  border-radius: 15px;
-}
-
-.Setup .toggle-btns button {
-  margin-right: 20px;
-  margin-bottom: 20px;
-  cursor: pointer;
-}
-
-.Setup .toggle-btns button:nth-child(4) {
-  margin-right: 0px;
 }
 
 .Setup ul li h6 {
@@ -212,8 +221,8 @@
 
   .Setup .toggle-btns button {
     margin-top: 100px;
-    font-size: 30px;
-    margin-right: 80px;
+    font-size: 20px;
+    margin-right: 40px;
   }
 
   .Setup .toggle-btns button:nth-child(4) {
@@ -235,9 +244,11 @@
 
   .Setup ul li:hover {
     background-color: #27292f;
-    padding: 6px 10px;
+    border-left: solid;
+    writing-mode: horizontal-tb;
     box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.5);
     transition: all 0.5s ease-out;
+    cursor: pointer;
   }
 
   .Setup ul li h6 {

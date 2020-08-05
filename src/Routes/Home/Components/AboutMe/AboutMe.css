@@ -40,6 +40,8 @@
   top: 8px;
   left: 25px;
   color: #fff;
+  background: #1d1f25;
+  padding: 0;
 }
 
 .AboutMe .Socials ul {
@@ -96,6 +98,18 @@
 .AboutMe .Socials ul li:nth-child(1),
 .AboutMe .Socials ul li:nth-child(2) {
   margin-right: 60px;
+}
+
+@media only screen and (max-device-width: 414px) and (max-device-height: 776px) {
+  .AboutMe .Heading h3 {
+    left: 18px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (min-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  .AboutMe .Heading h3 {
+    left: 18px;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -190,6 +204,70 @@
   }
 
   .AboutMe .video-container {
+    width: 530px;
+  }
+
+  .AboutMe .Heading {
+    background-size: 80px 80px;
+    width: 320px;
+    height: 59px;
+    margin-bottom: 80px;
+  }
+
+  .AboutMe .Heading h3 {
+    font-size: 60px;
+    top: 18px;
+    left: 45px;
+  }
+
+  .AboutMe p {
+    font-size: 22px;
+    width: 90%;
+    margin-left: 50px;
+  }
+
+  .AboutMe .Socials ul {
+    float: left;
+  }
+
+  .AboutMe .Socials ul li {
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .AboutMe .Socials ul li a i {
+    font-size: 120px;
+  }
+
+  .AboutMe .Socials ul li a span {
+    color: #fff;
+    font-size: 27px;
+    right: 0px;
+  }
+
+  .AboutMe .Socials ul li:nth-child(1) {
+    margin-left: 0px;
+  }
+
+  .AboutMe .Socials ul li:nth-child(1),
+  .AboutMe .Socials ul li:nth-child(2) {
+    margin-right: 0px;
+  }
+
+  .AboutMe {
+    margin-bottom: 150px;
+    height: 100vh;
+  }
+}
+
+@media screen and (min-device-width: 1200px) {
+  .left-container {
+    width: 60%;
+    float: left;
+    margin-right: 150px;
+  }
+
+  .AboutMe .video-container {
     width: 630px;
   }
 
@@ -209,7 +287,7 @@
   .AboutMe p {
     font-size: 22px;
     width: 70%;
-    margin-left: 250px;
+    margin-left: 50px;
   }
 
   .AboutMe .Socials ul {

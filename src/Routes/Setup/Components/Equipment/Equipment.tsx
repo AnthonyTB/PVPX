@@ -38,33 +38,33 @@ const Equipment: React.FC<any> = () => {
   return (
     <div className='Equipment'>
       <div className='toggle-btns'>
-        <button type='button' onClick={() => stateUpdater('equipmentUpdater')}>
-          {equipment === 'hidden' ? (
-            <i className='far fa-circle'></i>
-          ) : (
-            <i className='far fa-dot-circle'></i>
-          )}
+        <button
+          type='button'
+          className={equipment === 'hidden' ? 'not-selected' : 'selected'}
+          onClick={() => stateUpdater('equipmentUpdater')}
+        >
+          Equipment
         </button>
-        <button type='button' onClick={() => stateUpdater('gamingUpdater')}>
-          {gaming === 'hidden' ? (
-            <i className='far fa-circle'></i>
-          ) : (
-            <i className='far fa-dot-circle'></i>
-          )}
+        <button
+          type='button'
+          className={gaming === 'hidden' ? 'not-selected' : 'selected'}
+          onClick={() => stateUpdater('gamingUpdater')}
+        >
+          Gaming PC
         </button>
-        <button type='button' onClick={() => stateUpdater('streamingUpdater')}>
-          {streaming === 'hidden' ? (
-            <i className='far fa-circle'></i>
-          ) : (
-            <i className='far fa-dot-circle'></i>
-          )}
+        <button
+          type='button'
+          className={streaming === 'hidden' ? 'not-selected' : 'selected'}
+          onClick={() => stateUpdater('streamingUpdater')}
+        >
+          Streaming PC
         </button>
-        <button type='button' onClick={() => stateUpdater('roomUpdater')}>
-          {room === 'hidden' ? (
-            <i className='far fa-circle'></i>
-          ) : (
-            <i className='far fa-dot-circle'></i>
-          )}
+        <button
+          type='button'
+          className={room === 'hidden' ? 'not-selected' : 'selected'}
+          onClick={() => stateUpdater('roomUpdater')}
+        >
+          Stream Room
         </button>
       </div>
       <ScrollAnimation animateIn='fadeIn' duration={2.5} delay={2}>

@@ -158,18 +158,16 @@ const AboutMe: React.FC<any> = () => {
             </video>
           </div>
           <p>
-            Pellentesque habitant morbi tristique senectus et netus et malesuada
-            fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae,
-            ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam
-            egestas semper. Aenean ultricies mi vitae est. Mauris placerat
-            eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
-            Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit
-            amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros
-            ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim
-            in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id
-            cursus faucibus, tortor neque egestas augue, eu vulputate magna eros
-            eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan
-            porttitor, facilisis luctus, metus
+            I started streaming Overwatch in early 2017 while I was a Senior in
+            College at UCF. After a few months I graduated college & got
+            partnered on Twitch during the same week so I pursued full-time
+            streaming. I became known as one of the best Junkrat players in the
+            game (peaking 4687sr Rank #6 on Junkrat & Rank #3 on Zarya in Top
+            500). After a couple years I moved to Call of Duty Blackout to
+            pursue the Battle Royale genre then Apex Legends upon release to
+            play Professionally under Cloud9 in early 2019. I briefly streamed
+            VALORANT but eventually moved back to Overwatch as casual content
+            creator.
           </p>
         </div>
         <div className='Socials'>
