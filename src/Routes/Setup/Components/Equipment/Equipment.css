@@ -29,20 +29,24 @@
 }
 
 .Setup .toggle-btns button {
-  margin-top: 100px;
   background: 0;
   padding: 0;
   border: 0;
   font-size: 20px;
   color: #d79d00;
   margin-right: 10px;
-  margin-bottom: 20px;
   cursor: pointer;
   text-transform: uppercase;
 }
 
+.Setup .toggle-btns button:nth-child(1) {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
 .Setup .toggle-btns button:nth-child(4) {
   margin-right: 0px;
+  margin-bottom: 20px;
 }
 
 .Setup .Heading h3 {
@@ -128,9 +132,16 @@
   }
 
   .Setup .toggle-btns button {
-    margin-top: 100px;
     font-size: 30px;
     margin-right: 50px;
+  }
+
+  .Setup .toggle-btns button:nth-child(1) {
+    margin-top: 100px;
+  }
+
+  .Setup .toggle-btns button:nth-child(2) {
+    margin-right: 0px;
   }
 
   .Setup .toggle-btns button:nth-child(4) {
@@ -170,9 +181,16 @@
   }
 
   .Setup .toggle-btns button {
-    margin-top: 100px;
-    font-size: 50px;
+    font-size: 35px;
     margin-right: 80px;
+  }
+
+  .Setup .toggle-btns button:nth-child(1) {
+    margin-top: 100px;
+  }
+
+  .Setup .toggle-btns button:nth-child(2) {
+    margin-right: 0px;
   }
 
   .Setup .toggle-btns button:nth-child(4) {
@@ -216,7 +234,77 @@
 
 @media screen and (min-device-width: 1025px) {
   .Equipment {
-    width: 40%;
+    width: 60%;
+  }
+
+  .Setup .toggle-btns button {
+    margin-top: 100px;
+    font-size: 20px;
+    margin-right: 40px;
+  }
+
+  .Setup .toggle-btns button:nth-child(4) {
+    margin-right: 0px;
+  }
+
+  .Setup .Heading h3 {
+    font-size: 60px;
+    pointer-events: none;
+  }
+
+  .Setup ul {
+    width: 90%;
+  }
+
+  .Setup ul li {
+    transition: all 0.5s ease-out;
+  }
+
+  .Setup ul li:hover {
+    background-color: #27292f;
+    border-left: solid;
+    writing-mode: horizontal-tb;
+    box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+  }
+
+  .Setup ul li h6 {
+    margin: 0 0 0 3px;
+    font-size: 35px;
+    pointer-events: none;
+  }
+
+  .Setup ul li p {
+    font-size: 20px;
+    margin: 5px 0 0 3px;
+    width: 70%;
+    pointer-events: none;
+  }
+
+  .Setup ul li a {
+    font-size: 14px;
+  }
+
+  .Setup ul li a img {
+    margin-left: -40px;
+    height: 42px;
+    width: 42px;
+    margin-top: -30px;
+  }
+
+  .Setup {
+    margin-bottom: 100px;
+  }
+
+  .Setup ul li {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-device-width: 1600px) {
+  .Equipment {
+    width: 50%;
   }
 
   .Setup .toggle-btns button {

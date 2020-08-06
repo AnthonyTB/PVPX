@@ -166,7 +166,7 @@
   .AboutMe .Heading h3 {
     font-size: 60px;
     top: 16px;
-    left: 47px;
+    left: 30px;
   }
 
   .AboutMe p {
@@ -217,7 +217,7 @@
   .AboutMe .Heading h3 {
     font-size: 60px;
     top: 18px;
-    left: 45px;
+    left: 32px;
   }
 
   .AboutMe p {
@@ -272,16 +272,16 @@
   }
 
   .AboutMe .Heading {
-    background-size: 80px 80px;
-    width: 320px;
-    height: 59px;
+    background-size: 60px 60px;
+    height: 46px;
+    width: 205px;
     margin-bottom: 80px;
   }
 
   .AboutMe .Heading h3 {
-    font-size: 60px;
+    font-size: 40px;
     top: 18px;
-    left: 45px;
+    left: 23px;
   }
 
   .AboutMe p {
@@ -345,7 +345,7 @@
   .AboutMe .Heading h3 {
     font-size: 60px;
     top: 18px;
-    left: 45px;
+    left: 32px;
   }
 
   .AboutMe p {
@@ -409,7 +409,7 @@
   .AboutMe .Heading h3 {
     font-size: 60px;
     top: 18px;
-    left: 45px;
+    left: 32px;
   }
 
   .AboutMe p {

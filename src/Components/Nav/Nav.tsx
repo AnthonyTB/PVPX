@@ -26,7 +26,9 @@ const Nav: React.FC<any> = (props: any) => {
       </button>
       <div
         className={`menu ${
-          menuState ? 'visible animate__animated animate__fadeIn' : 'hidden'
+          menuState
+            ? 'visible animate__animated animate__slideInRight'
+            : 'hidden'
         }`}
       >
         {props.location.pathname === '/Setup' ||

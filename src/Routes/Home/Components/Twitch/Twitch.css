@@ -22,6 +22,7 @@
   float: right;
   margin-right: 10px;
   font: 400 7px Arial;
+  border-bottom: 1px solid #d79d00;
 }
 
 .Twitch .twitch-btns button {
@@ -33,6 +34,7 @@
   font-size: 7px;
   float: right;
   cursor: pointer;
+  border-bottom: 1px solid #d79d00;
 }
 
 .Twitch-Container {
@@ -143,7 +145,7 @@
   .Twitch .Heading h3 {
     font-size: 60px;
     top: -49px;
-    left: 55px;
+    left: 35px;
   }
 
   .Twitch .chat {
@@ -191,7 +193,7 @@
   .Twitch .Heading h3 {
     font-size: 40px;
     top: -29px;
-    left: 30px;
+    left: 23px;
   }
 
   .Twitch .chat {
@@ -200,6 +202,14 @@
     margin-left: 40px;
     margin-bottom: 10px;
     display: inline-block;
+  }
+
+  .Twitch .twitch-btns a {
+    font: 400 10px Arial;
+  }
+
+  .Twitch .twitch-btns button {
+    font: 400 10px Arial;
   }
 
   .Twitch-Container {
@@ -239,7 +249,7 @@
   .Twitch .Heading h3 {
     font-size: 40px;
     top: -29px;
-    left: 40px;
+    left: 28px;
   }
 
   .Twitch-Container {
@@ -283,7 +293,7 @@
   .Twitch .Heading h3 {
     font-size: 60px;
     top: -49px;
-    left: 50px;
+    left: 35px;
   }
 
   .Twitch-Container {
