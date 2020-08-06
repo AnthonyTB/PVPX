@@ -19,32 +19,32 @@ const Footer: React.FC<any> = () => {
         <div className='right-column'>
           <ul>
             <li>
-              <a href='' target='blank_'>
-                <i className='fab fa-twitter'></i>
-              </a>
-            </li>
-            <li>
-              <a href='' target='blank_'>
+              <a href='https://www.twitch.tv/pvpx' target='blank_'>
                 <i className='fab fa-twitch'></i>
               </a>
             </li>
             <li>
-              <a href='' target='blank_'>
-                <i className='fab fa-instagram'></i>
-              </a>
-            </li>
-            <li>
-              <a href='' target='blank_'>
+              <a href='https://www.youtube.com/pvpx' target='blank_'>
                 <i className='fab fa-youtube'></i>
               </a>
             </li>
             <li>
-              <a href='' target='blank_'>
+              <a href='https://twitter.com/PVPX_' target='blank_'>
+                <i className='fab fa-twitter'></i>
+              </a>
+            </li>
+            <li>
+              <a href='https://www.instagram.com/pvpxofficial/' target='blank_'>
+                <i className='fab fa-instagram'></i>
+              </a>
+            </li>
+            <li>
+              <a href='https://www.instagram.com/pvpxofficial/' target='blank_'>
                 <i className='fab fa-discord'></i>
               </a>
             </li>
             <li>
-              <a href='' target='blank_'>
+              <a href='mailto:pvpxbusiness@gmail.com' target='blank_'>
                 <i className='fas fa-envelope'></i>
               </a>
             </li>

@@ -50,14 +50,16 @@
 }
 
 .Twitch .chat {
+  height: 330px;
   width: 330px;
   border-radius: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.5);
 }
 
 .Twitch .chat iframe {
   border-radius: 15px;
+  z-index: 13;
 }
 
 .Twitch-Container i {
@@ -73,7 +75,7 @@
   border-radius: 15px;
   -webkit-border-radius: 15px;
   position: relative;
-  z-index: 10;
+  z-index: 12;
 }
 
 .Twitch .Heading {
@@ -106,13 +108,13 @@
   .Twitch .Heading h3 {
     font-size: 40px;
     top: -31px;
-    left: 40px;
+    left: 27px;
   }
 
   .Twitch .chat {
     width: 630px;
     margin-bottom: 15px;
-    height: 255px;
+    height: 355px;
   }
 
   .Twitch .twitch-btns a {
@@ -150,7 +152,7 @@
 
   .Twitch .chat {
     width: 830px;
-    height: 300px;
+    height: 430px;
     margin-bottom: 20px;
   }
 

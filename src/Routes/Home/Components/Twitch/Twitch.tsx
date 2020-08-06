@@ -13,9 +13,9 @@ const Twitch: React.FC<any> = () => {
       <div className='chat animate__animated animate__zoomIn'>
         <iframe
           frameBorder='0'
-          scrolling='no'
+          scrolling='yes'
           id='PVPX'
-          src='http://www.twitch.tv/PVPX/chat?parent=localhost&parent=pvpx.vercel.sh&parent=pvpx.live'
+          src='https://www.twitch.tv/embed/PVPX/chat?parent=pvpx.vercel.app&parent=pvpx.live'
           height='100%'
           width='100%'
         ></iframe>
@@ -30,7 +30,7 @@ const Twitch: React.FC<any> = () => {
           <i className='fab fa-twitch'></i>
           <iframe
             title="PVPX's Live Stream"
-            src={`https://player.twitch.tv/?channel=pvpx&parent=pvpx.vercel.sh&parent=pvpx.live&muted=true&autoplay=true`}
+            src={`https://player.twitch.tv/?channel=pvpx&parent=pvpx.vercel.app&parent=pvpx.live&muted=true&autoplay=true`}
             allowFullScreen={true}
             frameBorder='0'
             scrolling='no'
@@ -50,7 +50,7 @@ const Twitch: React.FC<any> = () => {
           <i className='fab fa-twitch'></i>
           <iframe
             title="PVPX's Live Stream"
-            src={`https://player.twitch.tv/?video=v${twitchVod.data[0].id}&parent=localhost&parent=pvpx.vercel.sh&parent=pvpx.live&muted=true&autoplay=true`}
+            src={`https://player.twitch.tv/?video=v${twitchVod.data[0].id}&parent=localhost&parent=pvpx.vercel.app&parent=pvpx.live&muted=true&autoplay=true`}
             allowFullScreen={true}
             frameBorder='0'
             scrolling='no'
@@ -78,10 +78,10 @@ const Twitch: React.FC<any> = () => {
             ) : (
               ''
             )}
-            <a href='' target='blank_'>
+            <a href='https://www.twitch.tv/subs/pvpx/' target='blank_'>
               subscribe
             </a>
-            <a href='' target='blank_'>
+            <a href='https://www.twitch.tv/pvpx' target='blank_'>
               follow
             </a>
           </div>

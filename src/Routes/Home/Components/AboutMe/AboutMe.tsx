@@ -173,21 +173,26 @@ const AboutMe: React.FC<any> = () => {
         <div className='Socials'>
           <ul>
             <li>
-              <a href='#' target='blank_'>
+              <a href='https://www.twitch.tv/pvpx' target='blank_'>
                 <i className='fab fa-twitch'></i>
-                <span>{formatCount(state.twitchFollowers)}</span>
+                <span className='count'>
+                  {formatCount(state.twitchFollowers)}
+                </span>
+                <span className='label'>Followers</span>
               </a>
             </li>
             <li>
-              <a href='#' target='blank_'>
+              <a href='https://www.youtube.com/pvpx' target='blank_'>
                 <i className='fab fa-youtube'></i>
-                <span>{formatCount(state.youtubeCount)}</span>
+                <span className='count'>{formatCount(state.youtubeCount)}</span>
+                <span className='label'>Subscribers</span>
               </a>
             </li>
             <li>
-              <a href='#' target='blank_'>
+              <a href='https://twitter.com/PVPX_' target='blank_'>
                 <i className='fab fa-twitter'></i>
-                <span>{formatCount(state.twitterCount)}</span>
+                <span className='count'>{formatCount(state.twitterCount)}</span>
+                <span className='label'>Followers</span>
               </a>
             </li>
           </ul>

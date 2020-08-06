@@ -95,9 +95,10 @@
   padding: 5px;
   margin-bottom: 15px;
   width: 100%;
+  height: 40px;
 }
 
-.Setup ul li h6 {
+.Setup ul li a h6 {
   float: left;
   color: #d79d00;
   margin: 0 0 0 3px;
@@ -105,7 +106,7 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
-.Setup ul li p {
+.Setup ul li a p {
   clear: both;
   float: left;
   font-size: 15px;
@@ -118,6 +119,9 @@
 .Setup ul li a {
   transition: 1s all ease;
   text-decoration: none;
+  height: 100%;
+  width: 100%;
+  display: block;
 }
 
 .Setup ul li a img {
@@ -152,12 +156,16 @@
     font-size: 50px;
   }
 
-  .Setup ul li h6 {
+  .Setup ul li {
+    height: 60px;
+  }
+
+  .Setup ul li a h6 {
     margin: 0 0 0 3px;
     font-size: 25px;
   }
 
-  .Setup ul li p {
+  .Setup ul li a p {
     font-size: 20px;
     margin: 5px 0 0 3px;
     width: 70%;
@@ -197,16 +205,20 @@
     margin-right: 0px;
   }
 
+  .Setup ul li {
+    height: 90px;
+  }
+
   .Setup .Heading h3 {
     font-size: 70px;
   }
 
-  .Setup ul li h6 {
+  .Setup ul li a h6 {
     margin: 0 0 0 3px;
     font-size: 45px;
   }
 
-  .Setup ul li p {
+  .Setup ul li a p {
     font-size: 30px;
     margin: 5px 0 0 3px;
     width: 70%;
@@ -258,6 +270,7 @@
 
   .Setup ul li {
     transition: all 0.5s ease-out;
+    height: 80px;
   }
 
   .Setup ul li:hover {
@@ -269,13 +282,13 @@
     cursor: pointer;
   }
 
-  .Setup ul li h6 {
+  .Setup ul li a h6 {
     margin: 0 0 0 3px;
     font-size: 35px;
     pointer-events: none;
   }
 
-  .Setup ul li p {
+  .Setup ul li a p {
     font-size: 20px;
     margin: 5px 0 0 3px;
     width: 70%;
@@ -339,21 +352,17 @@
     cursor: pointer;
   }
 
-  .Setup ul li h6 {
+  .Setup ul li a h6 {
     margin: 0 0 0 3px;
     font-size: 35px;
     pointer-events: none;
   }
 
-  .Setup ul li p {
+  .Setup ul li a p {
     font-size: 20px;
     margin: 5px 0 0 3px;
     width: 70%;
     pointer-events: none;
-  }
-
-  .Setup ul li a {
-    font-size: 14px;
   }
 
   .Setup ul li a img {

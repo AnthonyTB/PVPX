@@ -20,7 +20,7 @@
   text-align: left;
   margin: auto;
   margin-top: 20px;
-  width: 80%;
+  width: 300px;
   margin-bottom: 50px;
 }
 
@@ -38,7 +38,7 @@
   font-size: 30px;
   position: relative;
   top: 8px;
-  left: 25px;
+  left: 14px;
   color: #fff;
   background: #1d1f25;
   padding: 0;
@@ -63,14 +63,25 @@
   font-size: 50px;
 }
 
-.AboutMe .Socials ul li a span {
+.AboutMe .Socials ul li a .count {
   color: #fff;
   font-family: titling-gothic-fb, sans-serif;
   font-weight: 200;
   font-style: normal;
   position: absolute;
-  bottom: 0;
+  bottom: 9px;
   right: -20px;
+}
+
+.AboutMe .Socials ul li a .label {
+  display: block;
+  color: #d79d00;
+  font-family: titling-gothic-fb, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-top: 5px;
+  font-size: 6px;
 }
 
 .AboutMe .Socials ul li:nth-child(1) {
@@ -100,18 +111,6 @@
   margin-right: 60px;
 }
 
-@media only screen and (max-device-width: 414px) and (max-device-height: 776px) {
-  .AboutMe .Heading h3 {
-    left: 18px;
-  }
-}
-
-@media only screen and (min-device-width: 375px) and (min-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
-  .AboutMe .Heading h3 {
-    left: 18px;
-  }
-}
-
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
   .AboutMe .video-container {
     width: 630px;
@@ -126,10 +125,11 @@
   .AboutMe .Heading h3 {
     font-size: 40px;
     top: 16px;
-    left: 30px;
+    left: 25px;
   }
 
   .AboutMe p {
+    width: 600px;
     font-size: 22px;
   }
 
@@ -137,9 +137,15 @@
     font-size: 100px;
   }
 
-  .AboutMe .Socials ul li a span {
+  .AboutMe .Socials ul li a .count {
     color: #fff;
     font-size: 25px;
+    bottom: 20px;
+  }
+
+  .AboutMe .Socials ul li a .label {
+    margin-top: 10px;
+    font-size: 9px;
   }
 
   .AboutMe .Socials ul li:nth-child(1) {
@@ -170,6 +176,7 @@
   }
 
   .AboutMe p {
+    width: 800px;
     font-size: 32px;
   }
 
@@ -177,8 +184,7 @@
     font-size: 120px;
   }
 
-  .AboutMe .Socials ul li a span {
-    color: #fff;
+  .AboutMe .Socials ul li a .count {
     font-size: 27px;
   }
 
@@ -222,8 +228,7 @@
 
   .AboutMe p {
     font-size: 22px;
-    width: 90%;
-    margin-left: 50px;
+    width: 600px;
   }
 
   .AboutMe .Socials ul {
@@ -239,9 +244,14 @@
     font-size: 120px;
   }
 
-  .AboutMe .Socials ul li a span {
-    color: #fff;
+  .AboutMe .Socials ul li a .count {
     font-size: 27px;
+    right: 0px;
+    bottom: 20px;
+  }
+
+  .AboutMe .Socials ul li a .label {
+    font-size: 10px;
     right: 0px;
   }
 
@@ -286,8 +296,6 @@
 
   .AboutMe p {
     font-size: 22px;
-    width: 70%;
-    margin-left: 50px;
   }
 
   .AboutMe .Socials ul {
@@ -303,8 +311,7 @@
     font-size: 120px;
   }
 
-  .AboutMe .Socials ul li a span {
-    color: #fff;
+  .AboutMe .Socials ul li a .count {
     font-size: 27px;
     right: 0px;
   }
@@ -350,8 +357,6 @@
 
   .AboutMe p {
     font-size: 22px;
-    width: 70%;
-    margin-left: 250px;
   }
 
   .AboutMe .Socials ul {
@@ -367,8 +372,7 @@
     font-size: 120px;
   }
 
-  .AboutMe .Socials ul li a span {
-    color: #fff;
+  .AboutMe .Socials ul li a .count {
     font-size: 27px;
     right: 0px;
   }
@@ -414,8 +418,6 @@
 
   .AboutMe p {
     font-size: 22px;
-    width: 70%;
-    margin-left: 250px;
   }
 
   .AboutMe .Socials ul {
@@ -431,8 +433,7 @@
     font-size: 120px;
   }
 
-  .AboutMe .Socials ul li a span {
-    color: #fff;
+  .AboutMe .Socials ul li a .count {
     font-size: 27px;
     right: 0px;
   }
