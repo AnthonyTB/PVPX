@@ -1,11 +1,11 @@
 import React from 'react';
-import { AboutMe, Hero, Twitch, YouTube } from './Components/';
+import { Hero, Twitch, YouTube } from './Components/';
+import './Home.css';
 
 const Home: React.FC<any> = () => {
   return (
     <>
       <Hero />
-      <AboutMe />
       <Twitch />
       <YouTube />
     </>

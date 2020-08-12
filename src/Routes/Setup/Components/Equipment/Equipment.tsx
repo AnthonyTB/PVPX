@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Equipment.css';
+import { Link } from 'react-router-dom';
 import ScrollAnimation from 'react-animate-on-scroll';
 import {
   StreamingEquipment,
@@ -36,111 +37,119 @@ const Equipment: React.FC<any> = () => {
   };
 
   return (
-    <div className='Equipment'>
-      <div className='toggle-btns'>
-        <button
-          type='button'
-          className={equipment === 'hidden' ? 'not-selected' : 'selected'}
-          onClick={() => stateUpdater('equipmentUpdater')}
-        >
-          Equipment
-        </button>
-        <button
-          type='button'
-          className={gaming === 'hidden' ? 'not-selected' : 'selected'}
-          onClick={() => stateUpdater('gamingUpdater')}
-        >
-          Gaming PC
-        </button>
-        <button
-          type='button'
-          className={streaming === 'hidden' ? 'not-selected' : 'selected'}
-          onClick={() => stateUpdater('streamingUpdater')}
-        >
-          Streaming PC
-        </button>
-        <button
-          type='button'
-          className={room === 'hidden' ? 'not-selected' : 'selected'}
-          onClick={() => stateUpdater('roomUpdater')}
-        >
-          Stream Room
-        </button>
+    <>
+      <div className='nav'>
+        <Link to='/' className='Return'>
+          <img src={Arrow} alt='arrow svg' />
+          <span>Return</span>
+        </Link>
       </div>
-      <ScrollAnimation animateIn='fadeIn' duration={2.5} delay={2}>
-        <div className='Heading'>
-          <h3>{heading()}</h3>
+      <div className='Equipment'>
+        <div className='toggle-btns'>
+          <button
+            type='button'
+            className={equipment === 'hidden' ? 'not-selected' : 'selected'}
+            onClick={() => stateUpdater('equipmentUpdater')}
+          >
+            Equipment
+          </button>
+          <button
+            type='button'
+            className={gaming === 'hidden' ? 'not-selected' : 'selected'}
+            onClick={() => stateUpdater('gamingUpdater')}
+          >
+            Gaming PC
+          </button>
+          <button
+            type='button'
+            className={streaming === 'hidden' ? 'not-selected' : 'selected'}
+            onClick={() => stateUpdater('streamingUpdater')}
+          >
+            Streaming PC
+          </button>
+          <button
+            type='button'
+            className={room === 'hidden' ? 'not-selected' : 'selected'}
+            onClick={() => stateUpdater('roomUpdater')}
+          >
+            Stream Room
+          </button>
         </div>
-        <div
-          className={`StreamEquipment ${equipment} ${
-            equipment === 'visible' ? 'animate__animated animate__zoomIn' : ''
-          }`}
-        >
-          <ul>
-            {StreamingEquipment.map((item) => (
-              <li>
-                <a href={item.link} target='blank_'>
-                  <h6>{item.heading}</h6>
-                  <p>{item.name}</p>
-                  <img src={Arrow} alt='arrow svg' />
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div
-          className={`Gaming-PC ${gaming} ${
-            gaming === 'visible' ? 'animate__animated animate__zoomIn' : ''
-          }`}
-        >
-          <ul>
-            {GamingPC.map((item) => (
-              <li>
-                <a href={item.link} target='blank_'>
-                  <h6>{item.heading}</h6>
-                  <p>{item.name}</p>
-                  <img src={Arrow} alt='arrow svg' />
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div
-          className={`Stream-PC ${streaming} ${
-            streaming === 'visible' ? 'animate__animated animate__zoomIn' : ''
-          }`}
-        >
-          <ul>
-            {StreamPC.map((item) => (
-              <li>
-                <a href={item.link} target='blank_'>
-                  <h6>{item.heading}</h6>
-                  <p>{item.name}</p>
-                  <img src={Arrow} alt='arrow svg' />
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div
-          className={`Stream-Room ${room} ${
-            room === 'visible' ? 'animate__animated animate__zoomIn' : ''
-          }`}
-        >
-          <ul>
-            {StreamRoom.map((item) => (
-              <li>
-                <a href={item.link} target='blank_'>
-                  <h6>{item.heading}</h6>
-                  <p>{item.name}</p>
-                  <img src={Arrow} alt='arrow svg' />
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </ScrollAnimation>
-    </div>
+        <ScrollAnimation animateIn='fadeIn' duration={2.5} delay={2}>
+          <div className='Category'>
+            <h3>{heading()}</h3>
+          </div>
+          <div
+            className={`StreamEquipment ${equipment} ${
+              equipment === 'visible' ? 'animate__animated animate__zoomIn' : ''
+            }`}
+          >
+            <ul>
+              {StreamingEquipment.map((item) => (
+                <li>
+                  <a href={item.link} target='blank_'>
+                    <h6>{item.heading}</h6>
+                    <p>{item.name}</p>
+                    <img src={Arrow} alt='arrow svg' />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div
+            className={`Gaming-PC ${gaming} ${
+              gaming === 'visible' ? 'animate__animated animate__zoomIn' : ''
+            }`}
+          >
+            <ul>
+              {GamingPC.map((item) => (
+                <li>
+                  <a href={item.link} target='blank_'>
+                    <h6>{item.heading}</h6>
+                    <p>{item.name}</p>
+                    <img src={Arrow} alt='arrow svg' />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div
+            className={`Stream-PC ${streaming} ${
+              streaming === 'visible' ? 'animate__animated animate__zoomIn' : ''
+            }`}
+          >
+            <ul>
+              {StreamPC.map((item) => (
+                <li>
+                  <a href={item.link} target='blank_'>
+                    <h6>{item.heading}</h6>
+                    <p>{item.name}</p>
+                    <img src={Arrow} alt='arrow svg' />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div
+            className={`Stream-Room ${room} ${
+              room === 'visible' ? 'animate__animated animate__zoomIn' : ''
+            }`}
+          >
+            <ul>
+              {StreamRoom.map((item) => (
+                <li>
+                  <a href={item.link} target='blank_'>
+                    <h6>{item.heading}</h6>
+                    <p>{item.name}</p>
+                    <img src={Arrow} alt='arrow svg' />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </ScrollAnimation>
+      </div>
+    </>
   );
 };
 

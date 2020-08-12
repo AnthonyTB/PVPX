@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import './App.css';
-import { Home, Setup } from './Routes/';
+import { Home, Setup, AboutMe } from './Routes/';
 import { Footer, Nav } from './Components';
 import { Switch, Route } from 'react-router-dom';
 import { Context } from './Context';
@@ -9,12 +9,7 @@ import DotLoader from 'react-spinners/DotLoader';
 import { Animated } from 'react-animated-css';
 
 const App: React.FC<any> = () => {
-  const {
-    twitchStream,
-    youtubeSubscribers,
-    twitterData,
-    instagramStats,
-  } = useContext(Context);
+  const { twitchStream, youtubeSubscribers, twitterData } = useContext(Context);
 
   const override = css`
     display: block;
@@ -57,6 +52,11 @@ const App: React.FC<any> = () => {
               exact
               path='/Setup'
               render={(routeProps) => <Setup {...routeProps} />}
+            />
+            <Route
+              exact
+              path='/AboutMe'
+              render={(routeProps) => <AboutMe {...routeProps} />}
             />
           </Switch>
           <Footer />

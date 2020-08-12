@@ -2,11 +2,12 @@ import React, { useContext, useState } from 'react';
 import './Twitch.css';
 import { Context } from '../../../../Context';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { Heading } from '../';
 
 const Twitch: React.FC<any> = () => {
   const [isChatRendered, toggleChat] = useState(false);
-  const { twitchStream, twitchVod } = useContext(Context);
-  const liveStatus = twitchStream.data.length > 0 ? true : false;
+  const { twitchStream, twitchVod, twitchFollowers } = useContext(Context);
+  const liveStatus = twitchStream.data.length > 0 ? false : true;
 
   const renderChat = () => {
     return (
@@ -43,21 +44,46 @@ const Twitch: React.FC<any> = () => {
     );
   };
 
-  const renderPastBroadcast = () => {
+  // const renderPastBroadcast = () => {
+  //   return (
+  //     <>
+  //       <div className='Twitch-Container'>
+  //         <i className='fab fa-twitch'></i>
+  //         <iframe
+  //           title="PVPX's Live Stream"
+  //           src={`https://player.twitch.tv/?video=v${twitchVod.data[0].id}&parent=localhost&parent=pvpx.vercel.app&parent=pvpx.live&muted=true&autoplay=true`}
+  //           allowFullScreen={true}
+  //           frameBorder='0'
+  //           scrolling='no'
+  //           height='100%'
+  //           width='100%'
+  //         />
+  //       </div>
+  //     </>
+  //   );
+  // };
+
+  const HeadingObject = {
+    Icon: 'fa-twitch',
+    Heading: 'PVPX',
+    HeadingValue: twitchFollowers.total,
+    HeadingLabel: 'Followers',
+  };
+
+  const showChatText = () => {
     return (
       <>
-        <div className='Twitch-Container'>
-          <i className='fab fa-twitch'></i>
-          <iframe
-            title="PVPX's Live Stream"
-            src={`https://player.twitch.tv/?video=v${twitchVod.data[0].id}&parent=localhost&parent=pvpx.vercel.app&parent=pvpx.live&muted=true&autoplay=true`}
-            allowFullScreen={true}
-            frameBorder='0'
-            scrolling='no'
-            height='100%'
-            width='100%'
-          />
-        </div>
+        <i className='far fa-eye'></i>
+        <span>show chat</span>
+      </>
+    );
+  };
+
+  const hideChatText = () => {
+    return (
+      <>
+        <i className='far fa-eye-slash'></i>
+        <span>hide chat</span>
       </>
     );
   };
@@ -65,24 +91,32 @@ const Twitch: React.FC<any> = () => {
   return (
     <ScrollAnimation animateIn='fadeIn' duration={2.5} delay={2}>
       <section className='Twitch'>
-        <div className='Heading'>
-          <h3>{liveStatus ? 'Currently Live' : 'Latest Stream'}</h3>
-        </div>
+        <Heading {...HeadingObject} />
         <div className='container'>
-          {liveStatus ? renderLiveStream() : renderPastBroadcast()}
+          {renderLiveStream()}
           <div className='twitch-btns'>
             {liveStatus ? (
               <button onClick={() => toggleChat(!isChatRendered)} type='button'>
-                {isChatRendered ? 'hide chat' : 'show chat'}
+                {isChatRendered ? hideChatText() : showChatText()}
               </button>
             ) : (
               ''
             )}
-            <a href='https://www.twitch.tv/subs/pvpx/' target='blank_'>
-              subscribe
+            <a
+              className='main'
+              href='https://www.twitch.tv/subs/pvpx/'
+              target='blank_'
+            >
+              <i className='far fa-star'></i>
+              <span>subscribe</span>
             </a>
-            <a href='https://www.twitch.tv/pvpx' target='blank_'>
-              follow
+            <a
+              className='secondary'
+              href='https://www.twitch.tv/pvpx'
+              target='blank_'
+            >
+              <i className='far fa-heart'></i>
+              <span>follow</span>
             </a>
           </div>
         </div>

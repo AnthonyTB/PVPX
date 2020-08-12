@@ -1,0 +1,86 @@
+.Heading {
+  position: absolute;
+  top: -100px;
+  left: 10px;
+}
+
+.Heading .left {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 80px;
+}
+
+.Heading .left i {
+  font-size: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Heading .left .count {
+  display: block;
+  color: #fff;
+  font-family: titling-gothic-fb, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  position: relative;
+  top: 40px;
+  float: right;
+}
+
+.Heading .left .label {
+  color: #d79d00;
+  font-family: titling-gothic-fb, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 6px;
+  position: relative;
+  top: -25px;
+  left: 20px;
+}
+
+.Heading .left .fa-twitch {
+  background: -webkit-linear-gradient(#2a0845, #6441a5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Heading .left .fa-youtube {
+  background: -webkit-linear-gradient(#b31217, #e52d27);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Heading .left .fa-twitter {
+  background: -webkit-linear-gradient(#0072ff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Heading hr {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 20px;
+  left: 70px;
+  width: 65px;
+  margin: 10px 0px 10px 0px;
+}
+
+.Heading .right {
+  position: absolute;
+  left: 110px;
+}
+
+.Heading .right a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.Heading .right h4 {
+  font-size: 30px;
+  margin-left: 20px;
+  margin-top: 10px;
+}

@@ -8,6 +8,28 @@
   overflow-x: hidden;
 }
 
+.Setup .nav {
+  margin-top: 40px;
+  margin-left: 30px;
+  float: left;
+}
+
+.Setup .nav .Return {
+  text-decoration: none;
+}
+
+.Setup .nav .Return img {
+  transform: rotate(180deg);
+  margin-right: 5px;
+}
+
+.Setup .nav .Return span {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  top: -5px;
+}
+
 .Setup .hidden {
   display: none;
 }
@@ -28,6 +50,10 @@
   transition: 1s all ease;
 }
 
+.Setup .toggle-btns {
+  clear: both;
+}
+
 .Setup .toggle-btns button {
   background: 0;
   padding: 0;
@@ -40,7 +66,7 @@
 }
 
 .Setup .toggle-btns button:nth-child(1) {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 20px;
 }
 
@@ -49,7 +75,7 @@
   margin-bottom: 20px;
 }
 
-.Setup .Heading h3 {
+.Setup .Category h3 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 30px;
   color: #fff;
@@ -152,7 +178,7 @@
     margin-right: 0px;
   }
 
-  .Setup .Heading h3 {
+  .Setup .Category h3 {
     font-size: 50px;
   }
 
@@ -209,7 +235,7 @@
     height: 90px;
   }
 
-  .Setup .Heading h3 {
+  .Setup .Category h3 {
     font-size: 70px;
   }
 
@@ -259,7 +285,7 @@
     margin-right: 0px;
   }
 
-  .Setup .Heading h3 {
+  .Setup .Category h3 {
     font-size: 60px;
     pointer-events: none;
   }
@@ -330,7 +356,7 @@
     margin-right: 0px;
   }
 
-  .Setup .Heading h3 {
+  .Setup .Category h3 {
     font-size: 60px;
     pointer-events: none;
   }

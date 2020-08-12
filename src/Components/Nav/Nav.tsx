@@ -1,48 +1,24 @@
 import React, { useState } from 'react';
 import './Nav.css';
-import { Link } from 'react-router-dom';
-import MenuImg from '../../Assets/Menu.svg';
-import Cancel from '../../Assets/cancel.svg';
+import SmallBranding from '../../Assets/Branding.png';
+import NavArrow from '../../Assets/NavArrow.svg';
 
-const Nav: React.FC<any> = (props: any) => {
-  const [menuState, toggleMenuState] = useState(false);
+const Nav: React.FC<any> = () => {
+  const [isNavVisibile, toggleNav] = useState(false);
 
   return (
-    <nav className='Nav'>
-      <button onClick={() => toggleMenuState(!menuState)} type='button'>
-        {!menuState ? (
-          <img
-            src={MenuImg}
-            alt='Menu Button'
-            className='animate__animated animate__fadeIn'
-          />
-        ) : (
-          <img
-            src={Cancel}
-            alt='Cancel Button'
-            className='animate__animated animate__fadeIn'
-          />
-        )}
+    <div className='Nav-Container'>
+      <nav className={isNavVisibile ? 'showing' : 'not-showing'}>
+        <img src={SmallBranding} alt='Small PVPX Logo' />
+      </nav>
+      <button onClick={() => toggleNav(!isNavVisibile)}>
+        <img
+          src={NavArrow}
+          alt='Arrow'
+          className={isNavVisibile ? '' : 'rotate'}
+        />
       </button>
-      <div
-        className={`menu ${
-          menuState
-            ? 'visible animate__animated animate__slideInRight'
-            : 'hidden'
-        }`}
-      >
-        {props.location.pathname === '/Setup' ||
-        props.location.pathname === '/setup' ? (
-          <Link onClick={() => toggleMenuState(false)} to='/'>
-            Home
-          </Link>
-        ) : (
-          <Link onClick={() => toggleMenuState(false)} to='/Setup'>
-            Setup
-          </Link>
-        )}
-      </div>
-    </nav>
+    </div>
   );
 };
 
