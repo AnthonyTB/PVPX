@@ -32,10 +32,10 @@ export function ContextProvider(props) {
           youtubeSubscribers: payload.youtubeSubscribers,
         };
 
-      case 'instagramStats':
+      case 'twitterTweets':
         return {
           ...prevState,
-          instagramStats: payload.instagramStats,
+          twitterTweets: payload.twitterTweets,
         };
       default:
         return '';
@@ -48,7 +48,7 @@ export function ContextProvider(props) {
     twitchFollowers: null,
     twitchStream: null,
     youtubeSubscribers: null,
-    instagramStats: null,
+    twitterTweets: null,
   });
 
   const dataSetter = (section, data) => {
@@ -64,6 +64,10 @@ export function ContextProvider(props) {
     const fetchTwitter = async () => {
       const twitterResponse = await Data.fetchTwitterData();
       dataSetter('twitterData', twitterResponse);
+    };
+    const fetchTwitterTweets = async () => {
+      const twitterTweetsResponse = await Data.fetchTwitterTweets();
+      dataSetter('twitterTweets', twitterTweetsResponse);
     };
     const fetchTwitchStream = async () => {
       const twitchResponse = await Data.fetchTwitchStream();
@@ -81,27 +85,23 @@ export function ContextProvider(props) {
       const youtubeResponse = await Data.fetchYoutubeSubs();
       dataSetter('youtubeSubscribers', youtubeResponse);
     };
-    const fetchInstagram = async () => {
-      const instagramResponse = await Data.fetchInstagramData();
-      dataSetter('instagramStats', instagramResponse);
-    };
     fetchTwitter();
+    fetchTwitterTweets();
     fetchTwitchStream();
     fetchTwitchVod();
     fetchTwitchFollowers();
     fetchYoutube();
-    fetchInstagram();
   }, []);
 
   const value = {
     dispatch,
     twitterData: state.twitterData,
+    twitterTweets: state.twitterTweets,
     twitchStream: state.twitchStream,
     twitchVod: state.twitchVod,
     twitchFollowers: state.twitchFollowers,
     youtubeSubscribers: state.youtubeSubscribers,
     youtubeUpload: state.youtubeUpload,
-    instagramStats: state.instagramStats,
   };
 
   return <Context.Provider value={value}>{props.children}</Context.Provider>;

@@ -1,16 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@100;100&display=swap');
+
 .Nav-Container .not-showing {
   display: none;
 }
 
 .Nav-Container {
   overflow-x: hidden;
-  position: relative;
+  position: absolute;
+  top: -3px;
+  width: 100%;
 }
 
 .Nav-Container nav {
-  height: 30px;
   width: 100%;
   background-color: #27292f;
+  position: relative;
+  z-index: 104;
+}
+
+.Nav-Container nav img {
+  height: auto;
+  width: 100px;
+  display: block;
+  margin: auto;
+  margin-top: 3px;
+}
+
+.Nav-Container nav .NavItems {
+  width: 60%;
+  display: block;
+  margin: auto;
+  margin-top: 3px;
+  padding-bottom: 3px;
+}
+
+.Nav-Container nav .NavItems a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 11px;
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  margin-right: 10px;
+  border-right: 1px solid #fff;
+  padding-right: 10px;
+}
+
+.Nav-Container nav .NavItems a:nth-last-child(1) {
+  border-right: 0;
+  padding-right: 0;
 }
 
 .Nav-Container button {
@@ -19,7 +56,12 @@
   border: 0;
   transform: rotate(-90deg);
   position: relative;
-  left: 150px;
+  left: 160px;
+  z-index: 13;
+}
+
+.Nav-Container .rotate {
+  transform: rotate(-180deg) !important;
 }
 
 .Nav-Container button img {

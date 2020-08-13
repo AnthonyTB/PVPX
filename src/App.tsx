@@ -9,7 +9,12 @@ import DotLoader from 'react-spinners/DotLoader';
 import { Animated } from 'react-animated-css';
 
 const App: React.FC<any> = () => {
-  const { twitchStream, youtubeSubscribers, twitterData } = useContext(Context);
+  const {
+    twitchStream,
+    youtubeSubscribers,
+    twitterData,
+    twitterTweets,
+  } = useContext(Context);
 
   const override = css`
     display: block;
@@ -39,7 +44,7 @@ const App: React.FC<any> = () => {
 
   return (
     <div className='App'>
-      {twitchStream && youtubeSubscribers && twitterData ? (
+      {twitchStream && youtubeSubscribers && twitterData && twitterTweets ? (
         <>
           <Route path='/' render={(routeProps) => <Nav {...routeProps} />} />
           <Switch>

@@ -15,39 +15,66 @@
 .AboutMe .video-container video {
   border-radius: 25px;
   box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.5);
+  margin-top: 100px;
 }
 
-.AboutMe .nav {
-  margin-bottom: 40px;
-  margin-top: 40px;
-  margin-left: 30px;
+.AboutMe .right-container {
+  width: 300px;
+  margin: auto;
+}
+
+.AboutMe .right-container img {
+  height: auto;
+  width: 80px;
+  border-radius: 50%;
+  box-shadow: 0px 11px 21px 0px rgba(0, 0, 0, 0.5);
+  border: 2px solid #d79d00;
   float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
 }
 
-.AboutMe .nav .Return {
-  text-decoration: none;
-  z-index: 13;
-  position: relative;
-}
-
-.AboutMe .nav .Return img {
-  transform: rotate(180deg);
-  margin-right: 5px;
-}
-
-.AboutMe .nav .Return span {
-  color: #fff;
-  text-transform: uppercase;
-  position: relative;
-  top: -5px;
-}
-
-.AboutMe p {
+.AboutMe .right-container p {
   text-align: left;
   margin: auto;
   margin-top: 20px;
-  width: 300px;
   margin-bottom: 50px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.AboutMe .right-container h4 {
+  text-align: left;
+  margin: auto;
+  color: #d79d00;
+  font-family: 'Ubuntu', sans-serif;
+  margin-bottom: 5px;
+}
+
+.AboutMe .right-container .divider {
+  width: 120px;
+  margin: 0;
+}
+
+.AboutMe .right-container ul {
+  list-style: none;
+  text-align: left;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 0;
+}
+
+.AboutMe .right-container ul li h5 {
+  color: #d79d00;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.AboutMe .right-container ul li span {
+  font-size: 12px;
+}
+
+.AboutMe .right-container ul li a {
+  color: #d79d00;
+  text-decoration: none;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {

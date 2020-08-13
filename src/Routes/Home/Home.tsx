@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hero, Twitch, YouTube } from './Components/';
+import { Hero, Twitch, YouTube, Twitter } from './Components/';
 import './Home.css';
 
 const Home: React.FC<any> = () => {
@@ -8,6 +8,7 @@ const Home: React.FC<any> = () => {
       <Hero />
       <Twitch />
       <YouTube />
+      <Twitter />
     </>
   );
 };

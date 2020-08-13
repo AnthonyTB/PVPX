@@ -38,12 +38,6 @@ const Equipment: React.FC<any> = () => {
 
   return (
     <>
-      <div className='nav'>
-        <Link to='/' className='Return'>
-          <img src={Arrow} alt='arrow svg' />
-          <span>Return</span>
-        </Link>
-      </div>
       <div className='Equipment'>
         <div className='toggle-btns'>
           <button

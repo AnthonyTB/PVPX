@@ -2,8 +2,8 @@ import React from 'react';
 import './AboutMe.css';
 import Render from '../../Assets/Render.mp4';
 import ScrollAnimation from 'react-animate-on-scroll';
-import Arrow from '../../Assets/arrow.svg';
-import { Link } from 'react-router-dom';
+import { FAQList } from './FAQList';
+import Headshot from '../../Assets/Headshot.png';
 
 const AboutMe: React.FC<any> = () => {
   return (
@@ -14,12 +14,6 @@ const AboutMe: React.FC<any> = () => {
       delay={1}
     >
       <section className='AboutMe'>
-        <div className='nav'>
-          <Link to='/' className='Return'>
-            <img src={Arrow} alt='arrow svg' />
-            <span>Return</span>
-          </Link>
-        </div>
         <div className='left-container'>
           <div className='video-container'>
             <video width='100%' height='auto' loop autoPlay muted>
@@ -28,6 +22,7 @@ const AboutMe: React.FC<any> = () => {
           </div>
         </div>
         <div className='right-container'>
+          <img src={Headshot} alt='Image of PVPX' />
           <p>
             I started streaming Overwatch in early 2017 while I was a Senior in
             College at UCF. After a few months I graduated college & got
@@ -40,6 +35,18 @@ const AboutMe: React.FC<any> = () => {
             VALORANT but eventually moved back to Overwatch as casual content
             creator.
           </p>
+          <h4>Frequently Asked Questions</h4>
+          <hr className='divider' />
+          <ul>
+            {FAQList.map((QnA) => {
+              return (
+                <li>
+                  <h5>{QnA.Question}</h5>
+                  <span dangerouslySetInnerHTML={{ __html: QnA.Answer }}></span>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </section>
     </ScrollAnimation>

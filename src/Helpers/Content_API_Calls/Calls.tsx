@@ -12,6 +12,17 @@ const Data = {
       !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json()
     );
   },
+  fetchTwitterTweets() {
+    return fetch(`${config.Proxy}${config.TwitterTweetsEndpoint}`, {
+      method: 'GET',
+      headers: {
+        'content-type': 'application/json',
+        Authorization: `Bearer ${config.TwitterToken}`,
+      },
+    }).then((res) =>
+      !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json()
+    );
+  },
   fetchYoutubeSubs() {
     return fetch(`${config.YoutubeSubsEndpoint}${config.YoutubeToken}`, {
       method: 'GET',
@@ -56,13 +67,6 @@ const Data = {
         'Client-ID': 'miqpryw3ejg6xvadet2m89ahzucab2',
         Authorization: `Bearer ${config.TwitchToken}`,
       },
-    }).then((res) =>
-      !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json()
-    );
-  },
-  fetchInstagramData() {
-    return fetch(`${config.InstagramEndpoint}`, {
-      method: 'GET',
     }).then((res) =>
       !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json()
     );
