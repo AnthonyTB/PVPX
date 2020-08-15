@@ -174,7 +174,7 @@
   }
 
   .Twitch {
-    margin-bottom: 150px;
+    margin-bottom: 250px;
   }
 
   .Twitch .twitch-btns button i {
@@ -199,7 +199,7 @@
 
 @media screen and (min-device-width: 1025px) {
   .Twitch {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
 
   .Twitch .container {
@@ -266,7 +266,7 @@
 
 @media screen and (min-device-width: 1200px) {
   .Twitch {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
 
   .Twitch-Container {
@@ -297,7 +297,7 @@
 
 @media screen and (min-device-width: 1500px) {
   .Twitch {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
 
   .Twitch-Container {
@@ -336,7 +336,7 @@
 
 @media screen and (min-device-width: 1800px) {
   .Twitch {
-    margin-bottom: 250px;
+    margin-bottom: 300px;
   }
 
   .Twitch-Container {

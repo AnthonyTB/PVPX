@@ -1,0 +1,177 @@
+.Twitter {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.Twitter .container {
+  position: relative;
+  width: 330px;
+}
+
+.Twitter .container .fa-twitter {
+  position: absolute;
+  color: #27292f;
+  top: -60px;
+  right: 10px;
+  font-size: 90px;
+  z-index: 1;
+}
+
+.Twitter .twitter-btns {
+  position: relative;
+  left: 0;
+}
+
+.Twitter .twitter-btns a {
+  float: right;
+  font: 400 7px Arial;
+  background: -webkit-linear-gradient(#0072ff, #00c6ff);
+  padding: 6px 4px;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.Twitter .twitter-btns i {
+  float: left;
+  font-size: 10px;
+  margin-right: 3px;
+}
+
+.Twitter .twitter-btns a span {
+  font-size: 400 7px Arial;
+  text-transform: uppercase;
+  float: right;
+  margin-top: 2px;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .Twitter .container {
+    width: 660px;
+  }
+
+  .Twitter .container .fa-twitter {
+    font-size: 200px;
+    top: -130px;
+    right: 10px;
+  }
+
+  .Twitter .twitter-btns a {
+    font: 400 10px Arial;
+  }
+
+  .Twitter .twitter-btns i {
+    font-size: 10px;
+  }
+
+  .Twitter .twitter-btns a span {
+    font-size: 400 10px Arial;
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+  .Twitter .container {
+    width: 830px;
+  }
+
+  .Twitter {
+    margin-bottom: 200px;
+  }
+
+  .Twitter .twitter-btns {
+    margin-top: 20px;
+  }
+
+  .Twitter .twitter-btns a {
+    font: 400 15px Arial;
+  }
+
+  .Twitter .twitter-btns i {
+    font-size: 15px;
+    margin-right: 6px;
+  }
+
+  .Twitter .twitter-btns a span {
+    font-size: 400 15px Arial;
+    margin-top: -2px;
+  }
+}
+
+@media screen and (min-device-width: 1025px) {
+  .Twitter .container {
+    width: 370px;
+  }
+
+  .Twitter .twitter-btns a {
+    font: 400 10px Arial;
+  }
+
+  .Twitter .twitter-btns a span {
+    margin-top: 0px;
+  }
+
+  .Twitter .container .fa-twitter {
+    font-size: 120px;
+    top: -80px;
+    right: -30px;
+  }
+
+  .Twitter .twitter-btns i {
+    font-size: 10px;
+    margin-right: 3px;
+  }
+}
+
+@media screen and (min-device-width: 1200px) {
+  .Twitter .container {
+    width: 444px;
+  }
+
+  .Twitter ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  .Twitter .twitter-btns a {
+    font: 400 10px Arial;
+  }
+
+  .Twitter .twitter-btns a span {
+    margin-top: 0px;
+  }
+
+  .Twitter .container .fa-twitter {
+    font-size: 120px;
+    top: -80px;
+    right: -30px;
+  }
+
+  .Twitter .twitter-btns i {
+    font-size: 10px;
+    margin-right: 3px;
+  }
+}
+
+@media screen and (min-device-width: 1500px) {
+  .Twitter .container {
+    width: 551px;
+  }
+}
+
+@media screen and (min-device-width: 1800px) {
+  .Twitter .container {
+    width: 730px;
+  }
+
+  .Twitter .container .fa-twitter {
+    top: -140px;
+    right: -60px;
+    font-size: 220px;
+  }
+}

@@ -53,6 +53,7 @@
 .AboutMe .right-container .divider {
   width: 120px;
   margin: 0;
+  background: #fff;
 }
 
 .AboutMe .right-container ul {
@@ -78,6 +79,19 @@
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .AboutMe .right-container {
+    margin: auto;
+    width: 600px;
+  }
+
+  .AboutMe .right-container img {
+    width: 100px;
+  }
+
+  .AboutMe .right-container .divider {
+    width: 180px;
+  }
+
   .AboutMe .video-container {
     width: 630px;
   }
@@ -85,6 +99,18 @@
   .AboutMe p {
     width: 600px;
     font-size: 22px;
+  }
+
+  .AboutMe .right-container ul li h5 {
+    font-size: 22px;
+  }
+
+  .AboutMe .right-container ul li span {
+    font-size: 18px;
+  }
+
+  .AboutMe .right-container h4 {
+    font-size: 26px;
   }
 }
 
@@ -93,9 +119,30 @@
     width: 830px;
   }
 
+  .AboutMe .right-container {
+    margin: auto;
+    width: 830px;
+  }
+
+  .AboutMe .right-container img {
+    width: 180px;
+  }
+
   .AboutMe p {
     width: 800px;
     font-size: 32px;
+  }
+
+  .AboutMe .right-container ul li h5 {
+    font-size: 32px;
+  }
+
+  .AboutMe .right-container ul li span {
+    font-size: 26px;
+  }
+
+  .AboutMe .right-container h4 {
+    font-size: 36px;
   }
 
   .AboutMe {
@@ -104,86 +151,67 @@
 }
 
 @media screen and (min-device-width: 1025px) {
-  .left-container {
-    width: 60%;
-    float: left;
-    margin-right: 150px;
-  }
-
   .AboutMe .video-container {
     width: 530px;
   }
 
+  .AboutMe .right-container {
+    margin: auto;
+    width: 530px;
+  }
+
+  .AboutMe .right-container img {
+    width: 100px;
+  }
+
   .AboutMe p {
-    font-size: 22px;
-    width: 600px;
+    font-size: 18px;
+    width: 530px;
+  }
+
+  .AboutMe .right-container .divider {
+    width: 220px;
+  }
+
+  .AboutMe .right-container ul li h5 {
+    font-size: 18px;
+  }
+
+  .AboutMe .right-container ul li span {
+    font-size: 14px;
+  }
+
+  .AboutMe .right-container h4 {
+    font-size: 32px;
   }
 
   .AboutMe {
     margin-bottom: 150px;
-    height: 100vh;
   }
 }
 
 @media screen and (min-device-width: 1200px) {
-  .left-container {
-    width: 60%;
-    float: left;
-    margin-right: 150px;
+  .AboutMe .video-container {
+    width: 630px;
   }
 
-  .AboutMe .video-container {
+  .AboutMe .right-container {
+    margin: auto;
     width: 630px;
   }
 
   .AboutMe p {
     font-size: 22px;
+    width: 630px;
   }
 
   .AboutMe {
     margin-bottom: 150px;
-    height: 100vh;
   }
 }
 
 @media screen and (min-device-width: 1500px) {
-  .left-container {
-    width: 60%;
-    float: left;
-    margin-right: 150px;
-  }
-
-  .AboutMe .video-container {
-    width: 630px;
-  }
-
-  .AboutMe p {
-    font-size: 22px;
-  }
-
-  .AboutMe {
-    margin-bottom: 150px;
-    height: 100vh;
-  }
 }
 
 @media screen and (min-device-width: 1800px) {
-  .left-container {
-    width: 60%;
-    float: left;
-    margin-right: 150px;
-  }
-
-  .AboutMe .video-container {
-    width: 630px;
-  }
-
-  .AboutMe p {
-    font-size: 22px;
-  }
-
-  .AboutMe {
-    margin-bottom: 150px;
-    height: 100vh;
-  }
 }

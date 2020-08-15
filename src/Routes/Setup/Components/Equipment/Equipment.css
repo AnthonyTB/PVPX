@@ -257,7 +257,11 @@
   .Setup .toggle-btns button {
     margin-top: 100px;
     font-size: 20px;
-    margin-right: 40px;
+    margin-right: 20px;
+  }
+
+  .Setup .toggle-btns button:nth-child(2) {
+    margin-right: 20px;
   }
 
   .Setup .toggle-btns button:nth-child(4) {
