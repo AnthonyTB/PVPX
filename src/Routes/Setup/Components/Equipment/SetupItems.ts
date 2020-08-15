@@ -17,6 +17,11 @@ export const StreamingEquipment: SetupItem[] = [
   },
   {
     heading: 'Headset',
+    name: 'EPOS Sennheiser GSP 670',
+    link: 'https://amzn.to/2DLHQ3a',
+  },
+  {
+    heading: 'Headset',
     name: 'HyperX Cloud Alpha',
     link: 'https://amzn.to/2YbLiJt',
   },
@@ -38,12 +43,12 @@ export const StreamingEquipment: SetupItem[] = [
   {
     heading: 'Chair',
     name: 'SecretLabs Titan',
-    link: 'https://amzn.to/33ZPcs3',
+    link: 'https://amzn.to/3gRFI84',
   },
   {
     heading: 'Desk',
-    name: 'Ikea BEKANT',
-    link: 'http://amzn.to/2HRIzfy',
+    name: 'Gaming Desk',
+    link: 'https://amzn.to/31Kuaxi',
   },
   {
     heading: 'Webcam',
@@ -57,8 +62,8 @@ export const StreamingEquipment: SetupItem[] = [
   },
   {
     heading: 'Studio Microphone',
-    name: 'AT2020',
-    link: 'https://amzn.to/2OeBgTw',
+    name: 'HyperX Quadcast',
+    link: 'https://amzn.to/2CrtW5w',
   },
   {
     heading: 'Studio Mic Mixer',
@@ -106,7 +111,7 @@ export const GamingPC = [
   {
     heading: 'RAM',
     name: 'Corsair Vengeance 3200MHz 16GB',
-    link: 'https://amzn.to/2EABuSR',
+    link: 'https://amzn.to/3kFYKRf',
   },
   {
     heading: 'SSD',

@@ -39,6 +39,7 @@ const YouTube: React.FC<any> = () => {
     Heading: 'PVPX',
     HeadingValue: youtubeSubscribers.statistics.subscriberCount,
     HeadingLabel: 'Subscribers',
+    Link: 'https://www.youtube.com/c/pvpx',
   };
 
   return (

@@ -1,17 +1,20 @@
 import React from 'react';
 import './Footer.css';
 import BrandingSmall from '../../Assets/Branding.png';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC<any> = () => {
   return (
     <footer className='Footer'>
       <div className='Footer-Container'>
         <div className='left-column'>
-          <img
-            src={BrandingSmall}
-            alt='Small Logo'
-            className='small-branding'
-          />
+          <Link to='/'>
+            <img
+              src={BrandingSmall}
+              alt='Small Logo'
+              className='small-branding'
+            />
+          </Link>
         </div>
         <div className='middle-column'>
           <hr />

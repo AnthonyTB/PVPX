@@ -84,6 +84,7 @@
   font-size: 30px;
   margin-left: 20px;
   margin-top: 10px;
+  color: #fff;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -191,7 +192,15 @@
     width: 120px;
   }
 
-  .Heading hr {
+  .Heading hr:nth-child(1),
+  .Heading hr:nth-child(3) {
+    top: 50px;
+    left: 110px;
+    width: 90px;
+    margin: 10px 0px 10px 0px;
+  }
+
+  .Heading hr:nth-child(2) {
     top: 52px;
     left: 110px;
     width: 90px;

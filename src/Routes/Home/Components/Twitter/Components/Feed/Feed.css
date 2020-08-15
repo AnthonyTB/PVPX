@@ -30,18 +30,18 @@
 
 @media screen and (min-device-width: 1200px) {
   .Twitter-Feed {
-    width: 444px;
+    width: 400px;
   }
 }
 
 @media screen and (min-device-width: 1500px) {
   .Twitter-Feed {
-    width: 551px;
+    width: 351px;
   }
 }
 
 @media screen and (min-device-width: 1800px) {
   .Twitter-Feed {
-    width: 730px;
+    width: 430px;
   }
 }

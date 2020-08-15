@@ -10,9 +10,10 @@ const Twitter: React.FC<any> = () => {
 
   const HeadingObject = {
     Icon: 'fa-twitter',
-    Heading: 'PVPX',
+    Heading: 'PVPX_',
     HeadingValue: twitterData.followers_count,
     HeadingLabel: 'Followers',
+    Link: 'https://www.twitter.com/pvpx_',
   };
 
   return (

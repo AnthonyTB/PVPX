@@ -18,14 +18,14 @@ Bachelors in Business Management Entrepreneurial Track in 2017`,
   {
     Question: 'Settings & other?',
     Answer: `
-      <a href='nightbot.tv/t/pvpx/commands' target='blank_'>
+      <a href='https://nightbot.tv/t/pvpx/commands' target='blank_'>
         Here
       </a> 
      has up to date commands of more specific questions!`,
   },
   {
     Question: 'How do I donate?',
-    Answer: `Go <a href='streamlabs.com/pvpx/tip' target='blank_'>
+    Answer: `Go <a href='https://streamlabs.com/pvpx/tip' target='blank_'>
         Here
       </a>`,
   },

@@ -7,7 +7,7 @@ import { Heading } from '../';
 const Twitch: React.FC<any> = () => {
   const [isChatRendered, toggleChat] = useState(false);
   const { twitchStream, twitchVod, twitchFollowers } = useContext(Context);
-  const liveStatus = twitchStream.data.length > 0 ? false : true;
+  const liveStatus = twitchStream.data.length > 0 ? true : false;
 
   const renderChat = () => {
     return (
@@ -68,6 +68,7 @@ const Twitch: React.FC<any> = () => {
     Heading: 'PVPX',
     HeadingValue: twitchFollowers.total,
     HeadingLabel: 'Followers',
+    Link: 'https://www.twitch.tv/pvpx/',
   };
 
   const showChatText = () => {

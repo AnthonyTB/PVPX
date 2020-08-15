@@ -7,6 +7,7 @@ interface HeadingProp {
   HeadingValue: number;
   HeadingLabel: string;
   Buttons?: linkButton[];
+  Link: string;
 }
 
 interface linkButton {
@@ -118,15 +119,19 @@ const Heading: React.FC<any> = (props: HeadingProp) => {
   return (
     <>
       <div className='Heading'>
-        <div className='left'>
-          <i className={`fab ${props.Icon}`}></i>
-          <span className='count'>{formatCount(state.headingValueCount)}</span>
-        </div>
-        <hr />
-        <div className='right'>
-          <h4>{props.Heading}</h4>
-          {/* {props.Buttons ? renderButtons() : ''} */}
-        </div>
+        <a href={props.Link} target='blank_'>
+          <div className='left'>
+            <i className={`fab ${props.Icon}`}></i>
+            <span className='count'>
+              {formatCount(state.headingValueCount)}
+            </span>
+          </div>
+          <hr />
+          <div className='right'>
+            <h4>{props.Heading}</h4>
+            {/* {props.Buttons ? renderButtons() : ''} */}
+          </div>
+        </a>
       </div>
     </>
   );

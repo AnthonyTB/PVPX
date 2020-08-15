@@ -47,7 +47,7 @@
   font-size: 400 7px Arial;
   text-transform: uppercase;
   float: right;
-  margin-top: 2px;
+  margin-top: 0px;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -130,7 +130,7 @@
 
 @media screen and (min-device-width: 1200px) {
   .Twitter .container {
-    width: 444px;
+    width: 400px;
   }
 
   .Twitter ::-webkit-scrollbar {
@@ -143,7 +143,8 @@
   }
 
   .Twitter .twitter-btns a span {
-    margin-top: 0px;
+    font: 400 10px Arial;
+    margin-top: 2px;
   }
 
   .Twitter .container .fa-twitter {
@@ -153,20 +154,20 @@
   }
 
   .Twitter .twitter-btns i {
-    font-size: 10px;
-    margin-right: 3px;
+    font-size: 15px;
+    margin-right: 5px;
   }
 }
 
 @media screen and (min-device-width: 1500px) {
   .Twitter .container {
-    width: 551px;
+    width: 351px;
   }
 }
 
 @media screen and (min-device-width: 1800px) {
   .Twitter .container {
-    width: 730px;
+    width: 430px;
   }
 
   .Twitter .container .fa-twitter {
