@@ -72,5 +72,4 @@ const App: React.FC<any> = () => {
     </div>
   );
 };
-
 export default App;
