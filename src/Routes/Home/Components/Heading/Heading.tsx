@@ -1,5 +1,7 @@
-import React, { useEffect, useReducer, useCallback } from 'react';
-import './Heading.css';
+import React, { useEffect, useReducer, useCallback } from "react";
+import "./Heading.css";
+import { Loader } from "../../../../Components/";
+import { css } from "@emotion/core";
 
 interface HeadingProp {
   Icon: string;
@@ -8,6 +10,7 @@ interface HeadingProp {
   HeadingLabel: string;
   Buttons?: linkButton[];
   Link: string;
+  DataRetrieved: boolean;
 }
 
 interface linkButton {
@@ -23,13 +26,13 @@ interface Reducer {
 const Heading: React.FC<any> = (props: HeadingProp) => {
   const Reducer = (prevState: any, { type, payload }: Reducer) => {
     switch (type) {
-      case 'headingValueCount':
+      case "headingValueCount":
         return {
           ...prevState,
           headingValueCount: payload.headingValueCount,
         };
       default:
-        return '';
+        return "";
     }
   };
 
@@ -74,14 +77,14 @@ const Heading: React.FC<any> = (props: HeadingProp) => {
   );
 
   useEffect(() => {
-    if (state.headingValueCount === 0) {
+    if (state.headingValueCount === 0 && props.DataRetrieved) {
       incrementVals(
-        'headingValueCount',
+        "headingValueCount",
         state.headingValueCount,
         props.HeadingValue
       );
     }
-  }, [incrementVals, state.headingValueCount]);
+  }, [incrementVals, state.headingValueCount, props.DataRetrieved]);
 
   const insert = (arr: any, index: number, newItem: any) => [
     ...arr.slice(0, index),
@@ -91,16 +94,16 @@ const Heading: React.FC<any> = (props: HeadingProp) => {
 
   const formatCount = (val: number) => {
     if (val.toString().length === 5) {
-      let arr = val.toString().split('');
-      return insert(arr, 2, '.').slice(0, 4).join('') + 'K';
+      let arr = val.toString().split("");
+      return insert(arr, 2, ".").slice(0, 4).join("") + "K";
     } else if (val.toString().length === 6) {
-      let arr = val.toString().split('');
-      return insert(arr, 3, '.').slice(0, 5).join('') + 'K';
+      let arr = val.toString().split("");
+      return insert(arr, 3, ".").slice(0, 5).join("") + "K";
     } else if (val.toString().length === 7) {
-      let arr = val.toString().split('');
-      return insert(arr, 1, '.').slice(0, 3).join('') + 'M';
+      let arr = val.toString().split("");
+      return insert(arr, 1, ".").slice(0, 3).join("") + "M";
     } else if (val.toString().length <= 4) {
-      return val.toString().replace(/(.)(?=(\d{3})+$)/g, '$1,');
+      return val.toString().replace(/(.)(?=(\d{3})+$)/g, "$1,");
     }
   };
 
@@ -116,18 +119,26 @@ const Heading: React.FC<any> = (props: HeadingProp) => {
   //   );
   // };
 
+  const cssStyling: any = css`
+    position: absolute;
+    top: 0;
+  `;
   return (
     <>
-      <div className='Heading'>
-        <a href={props.Link} target='blank_'>
-          <div className='left'>
+      <div className="Heading">
+        <a href={props.Link} target="blank_">
+          <div className="left">
             <i className={`fab ${props.Icon}`}></i>
-            <span className='count'>
-              {formatCount(state.headingValueCount)}
+            <span className="count">
+              {props.DataRetrieved ? (
+                formatCount(state.headingValueCount)
+              ) : (
+                <Loader css={cssStyling} color={"#d79d00"} size={20} />
+              )}
             </span>
           </div>
           <hr />
-          <div className='right'>
+          <div className="right">
             <h4>{props.Heading}</h4>
             {/* {props.Buttons ? renderButtons() : ''} */}
           </div>

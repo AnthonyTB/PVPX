@@ -1,22 +1,11 @@
-import config from '../../config';
+import config from "../../config";
 
 const Data = {
   fetchTwitterData() {
     return fetch(`${config.Proxy}${config.TwitterEndpoint}`, {
-      method: 'GET',
+      method: "GET",
       headers: {
-        'content-type': 'application/json',
-        Authorization: `Bearer ${config.TwitterToken}`,
-      },
-    }).then((res) =>
-      !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json()
-    );
-  },
-  fetchTwitterTweets() {
-    return fetch(`${config.Proxy}${config.TwitterTweetsEndpoint}`, {
-      method: 'GET',
-      headers: {
-        'content-type': 'application/json',
+        "content-type": "application/json",
         Authorization: `Bearer ${config.TwitterToken}`,
       },
     }).then((res) =>
@@ -25,9 +14,9 @@ const Data = {
   },
   fetchYoutubeSubs() {
     return fetch(`${config.YoutubeSubsEndpoint}${config.YoutubeToken}`, {
-      method: 'GET',
+      method: "GET",
       headers: {
-        'content-type': 'application/json',
+        "content-type": "application/json",
       },
     }).then((res) =>
       !res.ok
@@ -37,10 +26,10 @@ const Data = {
   },
   fetchTwitchStream() {
     return fetch(`${config.TwitchStreamEndpoint}`, {
-      method: 'GET',
+      method: "GET",
       headers: {
-        'content-type': 'application/json',
-        'Client-ID': 'miqpryw3ejg6xvadet2m89ahzucab2',
+        "content-type": "application/json",
+        "Client-ID": "miqpryw3ejg6xvadet2m89ahzucab2",
         Authorization: `Bearer ${config.TwitchToken}`,
       },
     }).then((res) =>
@@ -49,10 +38,10 @@ const Data = {
   },
   fetchTwitchVod() {
     return fetch(`${config.TwitchVodEndpoint}`, {
-      method: 'GET',
+      method: "GET",
       headers: {
-        'content-type': 'application/json',
-        'Client-ID': 'miqpryw3ejg6xvadet2m89ahzucab2',
+        "content-type": "application/json",
+        "Client-ID": "miqpryw3ejg6xvadet2m89ahzucab2",
         Authorization: `Bearer ${config.TwitchToken}`,
       },
     }).then((res) =>
@@ -61,10 +50,10 @@ const Data = {
   },
   fetchTwitchFollowers() {
     return fetch(`${config.TwitchFollowersEndpoint}`, {
-      method: 'GET',
+      method: "GET",
       headers: {
-        'content-type': 'application/json',
-        'Client-ID': 'miqpryw3ejg6xvadet2m89ahzucab2',
+        "content-type": "application/json",
+        "Client-ID": "miqpryw3ejg6xvadet2m89ahzucab2",
         Authorization: `Bearer ${config.TwitchToken}`,
       },
     }).then((res) =>

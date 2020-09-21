@@ -1,44 +1,38 @@
-import React, { createContext, useEffect, useReducer } from 'react';
-import Data from './Helpers/Content_API_Calls/Calls';
+import React, { createContext, useEffect, useReducer } from "react";
+import Data from "./Helpers/Content_API_Calls/Calls";
 
 export const Context = createContext();
 
 export function ContextProvider(props) {
   const Reducer = (prevState, { type, payload }) => {
     switch (type) {
-      case 'twitterData':
+      case "twitterData":
         return {
           ...prevState,
           twitterData: payload.twitterData,
         };
-      case 'twitchStream':
+      case "twitchStream":
         return {
           ...prevState,
           twitchStream: payload.twitchStream,
         };
-      case 'twitchVod':
+      case "twitchVod":
         return {
           ...prevState,
           twitchVod: payload.twitchVod,
         };
-      case 'twitchFollowers':
+      case "twitchFollowers":
         return {
           ...prevState,
           twitchFollowers: payload.twitchFollowers,
         };
-      case 'youtubeSubscribers':
+      case "youtubeSubscribers":
         return {
           ...prevState,
           youtubeSubscribers: payload.youtubeSubscribers,
         };
-
-      case 'twitterTweets':
-        return {
-          ...prevState,
-          twitterTweets: payload.twitterTweets,
-        };
       default:
-        return '';
+        return "";
     }
   };
 
@@ -48,7 +42,6 @@ export function ContextProvider(props) {
     twitchFollowers: null,
     twitchStream: null,
     youtubeSubscribers: null,
-    twitterTweets: null,
   });
 
   const dataSetter = (section, data) => {
@@ -63,30 +56,25 @@ export function ContextProvider(props) {
   useEffect(() => {
     const fetchTwitter = async () => {
       const twitterResponse = await Data.fetchTwitterData();
-      dataSetter('twitterData', twitterResponse);
-    };
-    const fetchTwitterTweets = async () => {
-      const twitterTweetsResponse = await Data.fetchTwitterTweets();
-      dataSetter('twitterTweets', twitterTweetsResponse);
+      dataSetter("twitterData", twitterResponse);
     };
     const fetchTwitchStream = async () => {
       const twitchResponse = await Data.fetchTwitchStream();
-      dataSetter('twitchStream', twitchResponse);
+      dataSetter("twitchStream", twitchResponse);
     };
     const fetchTwitchVod = async () => {
       const twitchResponse = await Data.fetchTwitchVod();
-      dataSetter('twitchVod', twitchResponse);
+      dataSetter("twitchVod", twitchResponse);
     };
     const fetchTwitchFollowers = async () => {
       const twitchResponse = await Data.fetchTwitchFollowers();
-      dataSetter('twitchFollowers', twitchResponse);
+      dataSetter("twitchFollowers", twitchResponse);
     };
     const fetchYoutube = async () => {
       const youtubeResponse = await Data.fetchYoutubeSubs();
-      dataSetter('youtubeSubscribers', youtubeResponse);
+      dataSetter("youtubeSubscribers", youtubeResponse);
     };
     fetchTwitter();
-    fetchTwitterTweets();
     fetchTwitchStream();
     fetchTwitchVod();
     fetchTwitchFollowers();
@@ -96,7 +84,6 @@ export function ContextProvider(props) {
   const value = {
     dispatch,
     twitterData: state.twitterData,
-    twitterTweets: state.twitterTweets,
     twitchStream: state.twitchStream,
     twitchVod: state.twitchVod,
     twitchFollowers: state.twitchFollowers,
