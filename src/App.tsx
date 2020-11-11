@@ -4,11 +4,11 @@ import { Home, Setup, AboutMe } from "./Routes/";
 import { Footer, Nav } from "./Components";
 import { Switch, Route } from "react-router-dom";
 
-const App: React.FC<any> = () => {
+const App: React.FC = () => {
   return (
     <div className="App">
       <>
-        <Route path="/" render={(routeProps) => <Nav {...routeProps} />} />
+        <Nav />
         <Switch>
           <Route
             exact
